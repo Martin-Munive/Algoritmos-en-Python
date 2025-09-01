@@ -1,8 +1,6 @@
-# Fundamentos de Ciencias de la Computación con Python
+# Algoritmos en Python: Fundamentos de Ciencias de la Computación
 
-![Python](https://img.shields.io/badge/python-3.12-blue.svg?logo=python&logoColor=white)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Project Status](https://img.shields.io/badge/status-en%20progreso-yellow.svg)
+![Python](https://img.shields.io/badge/python-3.12-blue.svg?logo=python&logoColor=white)![License](https://img.shields.io/badge/license-MIT-green.svg)![Project Status](https://img.shields.io/badge/status-en%20progreso-yellow.svg)
 
 Un libro digital y repositorio de código documentando un viaje de aprendizaje a través de las estructuras de datos, los algoritmos y los fundamentos de la ingeniería de software utilizando Python.
 
@@ -34,3 +32,4 @@ Este repositorio está estructurado como un libro. Cada carpeta es un módulo y 
 3.  **Lee la teoría:** Cada capítulo tiene un `README.md` que explica el concepto en detalle.
 4.  **Estudia el código:** Analiza los archivos `.py` para ver la implementación práctica.
 5.  **Ejecuta las pruebas:** Las pruebas (`test_*.py`) demuestran que el código funciona y te ayudan a entender los casos borde.
+--- TERMINA README PRINCIPAL ---
