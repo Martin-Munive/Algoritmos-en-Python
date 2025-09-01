@@ -43,6 +43,36 @@ La eficiencia de un array depende drásticamente de la operación que se realiza
 
 A continuación, se muestra el código que implementa y demuestra estas operaciones, el cual se encuentra en el archivo `arrays_listas.py`.
 
+### 5.1. Salida de Ejemplo de Ejecución
+
+Al ejecutar el script `arrays_listas.py`, esta es la salida que se produce en la consola:
+
+```console
+--- LISTAS ---
+Lista inicial de tareas: ['Lavar ropa', 'Estudiar Python', 'Hacer ejercicio']
+La primera tarea es (O(1)): Lavar ropa
+Lista con la primera tarea modificada: ['Lavar los platos', 'Estudiar Python', 'Hacer ejercicio']
+Lista después de añadir una tarea al final (append): ['Lavar los platos', 'Estudiar Python', 'Hacer ejercicio', 'Leer un libro']
+Lista después de insertar en el índice 1 (insert): ['Lavar los platos', 'Pasear al perro', 'Estudiar Python', 'Hacer ejercicio', 'Leer un libro']
+Se eliminó la última tarea: 'Leer un libro'. Lista actual: ['Lavar los platos', 'Pasear al perro', 'Estudiar Python', 'Hacer ejercicio']
+Se eliminó la primera tarea: 'Lavar los platos'. Lista actual: ['Pasear al perro', 'Estudiar Python', 'Hacer ejercicio']
+Sí, 'Estudiar Python' está en la lista de tareas.
+Tareas pendientes:
+- Pasear al perro
+- Estudiar Python
+- Hacer ejercicio
+
+--- TUPLAS ---
+Coordenadas iniciales: (10.0, 25.5, -5.0)
+La coordenada X es (O(1)): 10.0
+Error al intentar modificar una tupla: 'tuple' object does not support item assignment
+Sí, el valor -5.0 existe en las coordenadas.
+Valores de las coordenadas:
+- 10.0
+- 25.5
+- -5.0
+```
+
 ## 6. Aplicaciones en el Mundo Real
 
 *   **Gráficos por Computadora:** La pantalla es una matriz (un array de arrays) de píxeles.
