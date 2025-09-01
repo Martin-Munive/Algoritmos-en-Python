@@ -34,6 +34,40 @@ A continuación se presentan las complejidades más comunes, ordenadas de la má
 | **O(2^n)** | Exponencial | El tiempo de ejecución se duplica con cada elemento añadido a la entrada. | Algunos cálculos recursivos de Fibonacci sin optimización. |
 | **O(n!)** | Factorial | El tiempo de ejecución crece de forma factorial. Se vuelve inmanejable incluso para entradas pequeñas. | El problema del viajante resuelto por fuerza bruta. |
 
+### 3.1. Deconstruyendo la Matemática (Intuitivamente)
+
+Big O se enfoca en las "operaciones dominantes" y descarta las constantes. Veamos por qué.
+
+#### **O(n) - Lineal: Una Relación Directa**
+Imagina este código que busca un número en una lista:```python
+def encontrar_numero(lista, numero_buscado):
+    for numero in lista: # Esta línea se ejecuta 'n' veces
+        if numero == numero_buscado:
+            return True # Operación constante, O(1)
+    return False # Operación constante, O(1)
+
+En el peor de los casos (el número no está), el bucle for se ejecuta una vez por cada elemento de la lista. Si la lista tiene n elementos, el bucle se ejecuta n veces. El número de operaciones es directamente proporcional a n. Si duplicas n, duplicas las operaciones. Por eso es O(n).
+
+O(n²) - Cuadrática: El Efecto Multiplicativo
+Ahora, un código que busca pares duplicados:
+
+def encontrar_duplicados(lista):
+    for i in lista: # Bucle externo: se ejecuta 'n' veces
+        for j in lista: # Bucle interno: se ejecuta 'n' veces POR CADA iteración del bucle externo
+            if i == j:
+                # ... hacer algo
+                pass
+
+Por cada elemento i en la lista (un bucle de n pasos), recorremos la lista completa de nuevo con j (otros n pasos). El número total de operaciones es n * n = n². Si la lista tiene 10 elementos, hacemos 100 comparaciones. Si tiene 100, hacemos 10,000. El crecimiento es explosivo. Por eso es O(n²).
+O(log n) - Logarítmica: El Poder de la División
+La magia del logaritmo aparece cuando podemos descartar grandes porciones del problema en cada paso. Pensemos en la Búsqueda Binaria.
+Entrada: 16 elementos.
+Paso 1: Comparamos con el del medio. Descartamos la mitad. Nos quedan 8 elementos.
+Paso 2: Comparamos con el del medio de los 8. Nos quedan 4.
+Paso 3: Comparamos. Nos quedan 2.
+Paso 4: Comparamos. Nos queda 1.
+Para encontrar el elemento entre 16, solo necesitamos 4 pasos. Matemáticamente, la pregunta es: "¿Cuántas veces (x) puedes dividir 16 entre 2 para llegar a 1?". La respuesta es 2^x = 16, lo que es lo mismo que log₂(16) = 4. El número de operaciones crece de forma increíblemente lenta. Por eso O(log n) es tan deseable.
+
 ## 4. Aplicaciones en el Mundo Real
 
 Entender Big O es una habilidad fundamental, no teórica, para cualquier ingeniero de software. La elección de un algoritmo sobre otro puede ser la diferencia entre:
@@ -49,4 +83,4 @@ En la práctica, Big O guía decisiones de diseño cruciales:
 ## 5. Referencias y Lecturas Adicionales
 
 1.  Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2009). *Introduction to Algorithms* (3rd ed.). MIT Press. (Capítulos 1-3).
-2.  Knuth, D. E. (1997). *The Art of Computer Programming, Volume 1: Fundamental Algorithms* (3rd ed.). Addison-Wesley Professional. (Sección 1.2.11: Asymptotic Representations).W
+2.  Knuth, D. E. (1997). *The Art of Computer Programming, Volume 1: Fundamental Algorithms* (3rd ed.). Addison-Wesley Professional. (Sección 1.2.11: Asymptotic Representations).
