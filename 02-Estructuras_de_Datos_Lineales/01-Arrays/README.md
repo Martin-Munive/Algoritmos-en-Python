@@ -61,7 +61,7 @@ primera_tarea = tareas
 print(f"La primera tarea es (O(1)): {primera_tarea}")
 
 # 3. Modificación (Mutabilidad)
-tareas = "Lavar los platos"
+tareas[0] = "Lavar los platos"
 print(f"Lista con la primera tarea modificada: {tareas}")
 
 # 4. Inserción al final (O(1) amortizado)
