@@ -6,6 +6,26 @@ Un libro digital y repositorio de código documentando un viaje de aprendizaje a
 
 ---
 
+## 🎯 A Quién Va Dirigido
+
+Este proyecto está diseñado para:
+*   **Estudiantes de informática** que buscan un recurso práctico para complementar sus estudios teóricos.
+*   **Desarrolladores autodidactas** que desean construir una base sólida en ciencias de la computación.
+*   **Programadores de otros lenguajes** que quieren aprender Python en un contexto estructurado y fundamental.
+*   **Candidatos a entrevistas técnicas** que necesitan repasar y consolidar su conocimiento de algoritmos y estructuras de datos.
+
+## 🛠️ Prerrequisitos
+
+Para seguir este libro de manera efectiva, se recomienda tener:
+*   **Conocimientos básicos de programación:** No necesitas ser un experto en Python, pero debes entender conceptos como variables, bucles, condicionales y funciones en al menos un lenguaje de programación.
+*   **Familiaridad con la terminal o línea de comandos:** Saber cómo navegar entre directorios y ejecutar comandos básicos.
+*   **Software Instalado:**
+    *   Python (versión 3.8 o superior).
+    *   Git para el control de versiones.
+    *   Visual Studio Code o tu editor de código preferido.
+
+---
+
 ## 📖 Índice de Capítulos
 
 Este repositorio está estructurado como un libro. Cada carpeta es un módulo y cada subcarpeta es un capítulo con su propia explicación teórica (`README.md`) y código de implementación.
@@ -18,7 +38,7 @@ Este repositorio está estructurado como un libro. Cada carpeta es un módulo y 
 ### Módulo 2: Estructuras de Datos Lineales
 | Capítulo | Tema | Estado |
 | :--- | :--- | :---: |
-| 2.01 | `Arrays (Listas/Tuplas)` | ⬜ |
+| 2.01 | [Arrays (Listas/Tuplas)](./02-Estructuras_de_Datos_Lineales/01-Arrays/) | ✅ |
 | 2.02 | `Linked Lists (Listas Enlazadas)` | ⬜ |
 | 2.03 | `Stacks (Pilas)` | ⬜ |
 | 2.04 | `Queues (Colas) y Deques` | ⬜ |
