@@ -7,7 +7,7 @@ tareas = ["Lavar ropa", "Estudiar Python", "Hacer ejercicio"]
 print(f"Lista inicial de tareas: {tareas}")
 
 # 2. Acceso por Índice (O(1))
-primera_tarea = tareas
+primera_tarea = tareas[0]
 print(f"La primera tarea es (O(1)): {primera_tarea}")
 
 # 3. Modificación (Mutabilidad)
@@ -57,7 +57,7 @@ print(f"La coordenada X es (O(1)): {coordenada_x}")
 
 # 3. Inmutabilidad (Intentar modificarla dará un error)
 try:
-    coordenadas = 15.0
+    coordenadas[0] = 15.0
 except TypeError as e:
     print(f"Error al intentar modificar una tupla: {e}")
 
