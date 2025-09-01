@@ -32,4 +32,3 @@ Este repositorio está estructurado como un libro. Cada carpeta es un módulo y 
 3.  **Lee la teoría:** Cada capítulo tiene un `README.md` que explica el concepto en detalle.
 4.  **Estudia el código:** Analiza los archivos `.py` para ver la implementación práctica.
 5.  **Ejecuta las pruebas:** Las pruebas (`test_*.py`) demuestran que el código funciona y te ayudan a entender los casos borde.
---- TERMINA README PRINCIPAL ---
