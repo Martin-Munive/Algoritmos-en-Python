@@ -6,11 +6,11 @@ def test_list_operations():
     """Verifica las operaciones básicas de las listas."""
     # Creación y acceso
     frutas = ["manzana", "banana", "cereza"]
-    assert frutas == "manzana"
+    assert frutas[0] == "manzana"
     assert len(frutas) == 3
 
     # Modificación
-    frutas = "arándano"
+    frutas[1] = "arándano"
     assert frutas == ["manzana", "arándano", "cereza"]
 
     # Append (inserción al final)
@@ -38,12 +38,12 @@ def test_tuple_operations():
     """Verifica las operaciones básicas y la inmutabilidad de las tuplas."""
     # Creación y acceso
     rgb_color = (255, 0, 128)
-    assert rgb_color == 255
+    assert rgb_color[0] == 255
     assert len(rgb_color) == 3
 
     # Verificación de inmutabilidad
     try:
-        rgb_color = 100
+        rgb_color[0] = 100
         # Si esta línea se ejecuta, la prueba debe fallar
         assert False, "La tupla no debería ser mutable"
     except TypeError:
