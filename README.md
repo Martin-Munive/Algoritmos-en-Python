@@ -30,6 +30,13 @@ Para seguir este libro de manera efectiva, se recomienda tener:
 
 Este repositorio está estructurado como un libro. Cada carpeta es un módulo y cada subcarpeta es un capítulo con su propia explicación teórica (`README.md`) y código de implementación.
 
+### Módulo 0: Presaberes
+| Capítulo | Tema | Estado |
+| :--- | :--- | :---: |
+| 0.01 | `Profundizando Big O` | ⬜ |
+| 0.02 | [Introducción a las Pruebas en Python](./00-Presaberes/02-Introduccion_a_Pruebas/) | ✅ |
+| 0.03 | [Formateo de Cadenas con F-Strings](./00-Presaberes/03-Formateo_de_Cadenas_F-Strings/) | ✅ |
+
 ### Módulo 1: Fundamentos y Medición
 | Capítulo | Tema | Estado |
 | :--- | :--- | :---: |
