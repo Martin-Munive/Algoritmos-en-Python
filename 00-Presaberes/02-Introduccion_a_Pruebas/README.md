@@ -14,7 +14,7 @@ Su utilidad es inmensa:
 
 ## 2. Anatomía de Nuestro Archivo de Pruebas
 
-Analicemos el archivo `test_arrays_listas.py` que corregimos.
+Analicemos el archivo `test_arrays_listas.py` que veremos más adelante cuando hablemos de Listas y Tuplas.
 
 ```python
 # 1. El Nombre del Archivo
