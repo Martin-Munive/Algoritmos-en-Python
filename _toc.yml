@@ -1,0 +1,14 @@
+format: jb-book
+root: chapters/00-prefacio
+parts:
+  - caption: Front Matter
+    chapters:
+      - file: chapters/00-como-leer-este-libro
+  - caption: I. El lenguaje de las decisiones
+    chapters:
+      - file: chapters/01-que-es-un-algoritmo
+      - file: chapters/02-pensar-en-pasos
+      - file: chapters/03-variables-datos-decisiones
+  - caption: Apéndices
+    chapters:
+      - file: chapters/apendice-a-entorno

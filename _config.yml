@@ -1,0 +1,42 @@
+title: Materia Medica Digitalis
+author: Martin Munive
+copyright: "2026"
+logo: ""
+
+execute:
+  execute_notebooks: "off"
+
+exclude_patterns:
+  - README.md
+  - docs/**
+  - venv/**
+  - .venv/**
+  - _build/**
+  - .github/**
+  - 00-Presaberes/**
+  - 01-Analisis_de_Complejidad_Big_O/**
+  - 02-Estructuras_de_Datos_Lineales/**
+
+html:
+  favicon: ""
+  use_issues_button: true
+  use_repository_button: true
+  use_edit_page_button: true
+  baseurl: "https://martin-munive.github.io/Algoritmos-en-Python/"
+
+repository:
+  url: "https://github.com/Martin-Munive/Algoritmos-en-Python"
+  path_to_book: ""
+  branch: "main"
+
+launch_buttons:
+  notebook_interface: "classic"
+
+sphinx:
+  config:
+    html_theme_options:
+      home_page_in_toc: true
+      repository_url: "https://github.com/Martin-Munive/Algoritmos-en-Python"
+      use_repository_button: true
+      use_issues_button: true
+      use_edit_page_button: true

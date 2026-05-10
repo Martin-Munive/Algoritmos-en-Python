@@ -1,103 +1,231 @@
-# Materia Medica Digitalis: Estructuras de Datos y Algoritmos Esenciales en Python
+# Materia Medica Digitalis
 
-![Python](https://img.shields.io/badge/python-3.12-blue.svg?logo=python&logoColor=white)![License](https://img.shields.io/badge/license-MIT-green.svg)![Project Status](https://img.shields.io/badge/status-en%20desarrollo-yellow.svg)![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
+**Algoritmos en Python para Medicina y Ciencias de la Vida**
 
-Un libro digital y repositorio de código que explora la intersección entre la medicina, la programación avanzada y la inteligencia artificial. Esta obra presenta un recorrido sistemático a través de estructuras de datos, algoritmos fundamentales y matemáticas computacionales, utilizando Python como herramienta principal y la resolución de problemas del mundo de la salud como contexto aplicado.
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Jupyter Book](https://img.shields.io/badge/Jupyter%20Book-Sphinx-F37626?logo=jupyter&logoColor=white)](https://jupyterbook.org/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-libro%20web-222222?logo=githubpages&logoColor=white)](https://martin-munive.github.io/Algoritmos-en-Python/)
+[![Estado](https://img.shields.io/badge/estado-edici%C3%B3n%20limpia%20en%20construcci%C3%B3n-F59E0B)](#estado-editorial)
+[![Licencia](https://img.shields.io/badge/licencia-MIT-16A34A)](LICENSE)
 
-Desde los fundamentos de la computación hasta técnicas de vanguardia en machine learning, cada capítulo combina rigor teórico con implementaciones prácticas, preparando al lector para enfrentar los desafíos computacionales de la medicina moderna.
+> Un libro web para aprender algoritmos desde problemas biomédicos: datos clínicos, decisiones, riesgo, estructuras de información, seguimiento de pacientes y sistemas computacionales para ciencias de la vida.
 
----
-
-## 🎯 A Quién Va Dirigido
-
-Este proyecto está diseñado especialmente para:
-*   **Profesionales y estudiantes de la salud** que buscan adentrarse en la programación y la ciencia de datos.
-*   **Ingenieros y desarrolladores** interesados en las aplicaciones médicas y de ciencias de la vida.
-*   **Cualquier mente curiosa** que desee aprender ciencias de la computación desde una perspectiva novedosa y aplicada.
-
-## 🤝 ¿Quieres Contribuir?
-
-¡La colaboración es bienvenida! Este es un proyecto vivo que busca beneficiarse del conocimiento colectivo. Si tienes una idea para una nueva analogía médica, un caso de estudio, una corrección o una mejora, por favor revisa nuestra **Guía de Contribución** (próximamente) o abre un "Issue" para discutirlo.
+**Materia Medica Digitalis** nace de una premisa simple: los algoritmos se entienden mejor cuando dejan de ser abstracciones aisladas y se convierten en instrumentos para pensar problemas reales. Este libro usa Python como lenguaje de trabajo y la medicina como territorio de aplicación para construir pensamiento computacional con rigor, claridad y utilidad.
 
 ---
 
-## 📖 Índice Maestro
+## Leer el libro
 
-Esta es la hoja de ruta completa de nuestro viaje de aprendizaje. Los capítulos marcados con ✅ están completos.
+- **Sitio web:** <https://martin-munive.github.io/Algoritmos-en-Python/>
+- **Portada del libro:** [`chapters/00-prefacio.md`](chapters/00-prefacio.md)
+- **Configuración del libro:** [`_config.yml`](_config.yml)
+- **Tabla de contenidos:** [`_toc.yml`](_toc.yml)
+- **Auditoría editorial previa:** [`docs/editorial_audit.md`](docs/editorial_audit.md)
+- **Hoja de ruta previa:** [`docs/roadmap.md`](docs/roadmap.md)
 
-### Módulo 0: Fundamentos y Presaberes
-| Capítulo | Tema | Estado |
-| :--- | :--- | :---: |
-| 0.01 | `Herramientas del Desarrollador` | ⬜ |
-| 0.02 | [Introducción a las Pruebas en Python](./00-Presaberes/02-Introduccion_a_Pruebas/) | ✅ |
-| 0.03 | [Formateo de Cadenas (F-Strings)](./00-Presaberes/03-Formateo_de_Cadenas_F-Strings/) | ✅ |
-| 0.04 | `Clases y Programación Orientada a Objetos (POO)` | ⬜ |
-| 0.05 | `Python Moderno: Anotaciones de Tipos` | ⬜ |
+> El libro está en reconstrucción editorial. El contenido previo del repositorio se conserva como cantera técnica, pero la edición web se está rehaciendo desde una base limpia.
 
-### Módulo 1: El Lenguaje de la Medición
-| Capítulo | Tema | Estado |
-| :--- | :--- | :---: |
-| 1.01 | [Análisis de Complejidad: Big O, Ω y Θ](./01-Analisis_de_Complejidad_Big_O/) | ✅ |
-| 1.02 | `Complejidad Espacial vs. Temporal` | ⬜ |
-| 1.03 | `Análisis Amortizado` | ⬜ |
-| 1.04 | `Clases de Complejidad (P vs NP)` | ⬜ |
+---
 
-### Módulo 2: Estructuras de Datos Lineales
-| Capítulo | Tema | Estado |
-| :--- | :--- | :---: |
-| 2.01 | [Arrays (Listas y Tuplas)](./02-Estructuras_de_Datos_Lineales/01-Arrays/) | ✅ |
-| 2.02 | [Listas Enlazadas](./02-Estructuras_de_Datos_Lineales/02-Linked_Lists/) | ✅ |
-| 2.03 | `Pilas (Stacks)` | ⬜ |
-| 2.04 | `Colas (Queues) y Deques` | ⬜ |
+## Qué es este proyecto
 
-### Módulo 3: Estructuras de Datos No Lineales
-| Capítulo | Tema | Estado |
-| :--- | :--- | :---: |
-| 3.01 | `Tablas Hash` | ⬜ |
-| 3.02 | `Árboles (BST, Balanceados, Heaps, Tries)` | ⬜ |
-| 3.03 | `Grafos (Recorridos, Ordenamiento Topológico)` | ⬜ |
+Este repositorio contiene la edición web de un libro sobre algoritmos, estructuras de datos y pensamiento computacional aplicado a medicina y ciencias de la vida.
 
-### Módulo 4: Paradigmas y Algoritmos Fundamentales
-| Capítulo | Tema | Estado |
-| :--- | :--- | :---: |
-| 4.01 | `Paradigma: Recursión` | ⬜ |
-| 4.02 | `Paradigma: Divide y Vencerás` | ⬜ |
-| 4.03 | `Algoritmos de Búsqueda` | ⬜ |
-| 4.04 | `Algoritmos de Ordenamiento` | ⬜ |
+No es solo una colección de apuntes ni una lista de ejercicios. La aspiración editorial es construir una obra progresiva donde cada capítulo responda tres preguntas:
 
-### Módulo 5: Paradigmas Algorítmicos Avanzados
-| Capítulo | Tema | Estado |
-| :--- | :--- | :---: |
-| 5.01 | `Algoritmos Voraces (Greedy)` | ⬜ |
-| 5.02 | `Programación Dinámica` | ⬜ |
-| 5.03 | `Backtracking` | ⬜ |
+1. **Qué problema resuelve este concepto.**
+2. **Cómo se implementa con Python.**
+3. **Por qué importa en un contexto biomédico real.**
 
-### Módulo 6: Algoritmos Avanzados sobre Estructuras
-| Capítulo | Tema | Estado |
-| :--- | :--- | :---: |
-| 6.01 | `Algoritmos de Grafos (Caminos Mínimos)` | ⬜ |
-| 6.02 | `Algoritmos de Strings` | ⬜ |
-| 6.03 | `Algoritmos Numéricos y Criptografía` | ⬜ |
+El objetivo no es enseñar Python como sintaxis aislada. El objetivo es enseñar a razonar con algoritmos.
 
-### Módulo 7: Fronteras y Aplicaciones Modernas
-| Capítulo | Tema | Estado |
-| :--- | :--- | :---: |
-| 7.01 | `Algoritmos en Ciencia de Datos` | ⬜ |
-| 7.02 | `Algoritmos en IA y Machine Learning` | ⬜ |
-| 7.03 | `Algoritmos Paralelos y Distribuidos` | ⬜ |
+---
 
-### Módulo Final: Casos de Estudio en Salud Digital
-| Capítulo | Tema | Estado |
-| :--- | :--- | :---: |
-| C.1 | `Análisis de Secuencias de ADN` | ⬜ |
-| C.2 | `Modelado de Epidemias` | ⬜ |
-| C.3 | `Triaje de Urgencias Optimizado` | ⬜ |
-| C.4 | `Búsqueda en Registros Médicos` | ⬜ |
-| C.5 | `Diagnóstico Asistido por IA` | ⬜ |
+## Para quién es
 
-### Apéndices
-| Título | Estado |
-| :--- | :---: |
-| `A. Apéndice Matemático` | ⬜ |
-| `B. Glosario de Términos` | ⬜ |
-| `C. Guía de Contribución` | ⬜ |
+Este libro está escrito para:
+
+- estudiantes y profesionales de medicina que quieren entrar a programación, ciencia de datos o inteligencia artificial;
+- investigadores en ciencias de la vida que necesitan automatizar análisis, ordenar datos y construir herramientas reproducibles;
+- programadores interesados en aplicaciones biomédicas con sentido clínico y científico;
+- lectores que quieren aprender algoritmos desde casos concretos, no desde ejemplos genéricos.
+
+No se asume formación avanzada en ciencias de la computación. Sí se espera curiosidad, paciencia y voluntad de pensar con precisión.
+
+---
+
+## Promesa editorial
+
+Al avanzar por el libro, el lector debería poder:
+
+- traducir problemas biomédicos a estructuras computacionales;
+- distinguir datos, reglas, decisiones, flujos y estados;
+- implementar algoritmos fundamentales en Python;
+- evaluar complejidad temporal y espacial sin perder intuición práctica;
+- construir herramientas pequeñas, verificables y útiles;
+- entender por qué un algoritmo correcto puede ser clínicamente insuficiente si ignora contexto, sesgo o seguridad.
+
+---
+
+## Índice maestro
+
+La edición limpia organizará el libro en siete partes.
+
+### I. El lenguaje de las decisiones
+
+- Qué es un algoritmo
+- Pensar en pasos
+- Variables, datos y decisiones
+- Condicionales
+- Bucles
+- Funciones
+- Errores, excepciones y seguridad del cálculo
+
+### II. Python como instrumento clínico-científico
+
+- Tipos de datos para problemas biomédicos
+- Listas, diccionarios y tablas simples
+- Lectura y limpieza de datos
+- Cálculo clínico reproducible
+- Automatización de tareas repetitivas
+- Validación de entradas
+
+### III. Algoritmos fundamentales
+
+- Búsqueda lineal y búsqueda binaria
+- Ordenamiento y priorización
+- Conteo, frecuencia y distribución
+- Filtrado de pacientes, eventos y resultados
+- Agrupación y resumen
+- Complejidad computacional
+- Algoritmos voraces
+- Programación dinámica
+
+### IV. Datos médicos y razonamiento cuantitativo
+
+- Sensibilidad, especificidad y valores predictivos
+- Riesgo absoluto, riesgo relativo y NNT
+- Scores clínicos como algoritmos
+- Triage y estratificación de riesgo
+- Series temporales en signos vitales
+- Alertas, umbrales e incertidumbre
+
+### V. Estructuras de datos para ciencias de la vida
+
+- Arrays y matrices
+- Tablas clínicas
+- Grafos y redes biomédicas
+- Árboles de decisión
+- Pilas, colas y flujos de atención
+- Índices y recuperación de información
+- Representación de conocimiento médico
+
+### VI. Casos aplicados
+
+- Calculadora de riesgo cardiovascular
+- Clasificador simple de urgencias
+- Seguimiento longitudinal de laboratorio
+- Detección de interacciones o contraindicaciones
+- Banco de preguntas médico con seguimiento de intentos
+- Sistema de priorización de pacientes
+- Mini motor de reglas clínicas
+
+### VII. Del algoritmo al sistema
+
+- Organización de proyectos Python
+- Pruebas y verificación
+- Documentación técnica y médica
+- Interfaces simples
+- Ética, seguridad y responsabilidad
+- Límites de la automatización clínica
+
+---
+
+## Primer lanzamiento editorial
+
+La reconstrucción comenzará con una unidad breve, coherente y publicable:
+
+1. **Inicio:** promesa, audiencia y mapa del libro.
+2. **Prefacio:** por qué un médico o científico de la vida debe aprender algoritmos.
+3. **Qué es un algoritmo:** definición, intuición y ejemplos biomédicos.
+4. **Pensar en pasos:** del razonamiento clínico al procedimiento computacional.
+5. **Variables, datos y decisiones:** primera conexión formal con Python.
+
+Cada entrega buscará ser una unidad de aprendizaje completa, no una cuota arbitraria de páginas.
+
+---
+
+## Filosofía
+
+Un algoritmo no es una receta vacía. Es una forma de hacer explícita una decisión.
+
+En medicina y ciencias de la vida, esa decisión rara vez vive sola: aparece dentro de incertidumbre, datos incompletos, riesgos, umbrales, pacientes, poblaciones y consecuencias. Por eso este libro no separa la técnica del contexto. La técnica se estudia para pensar mejor.
+
+---
+
+## Estado editorial
+
+El repositorio tuvo una primera etapa como colección de materiales sobre algoritmos y estructuras de datos. Esa etapa dejó contenido útil, pero la nueva edición requiere una arquitectura más limpia para publicarse como libro web.
+
+Estado actual:
+
+- **Identidad editorial:** definida.
+- **Stack web:** Jupyter Book + Sphinx + GitHub Pages.
+- **Contenido previo:** conservado como fuente de reconstrucción.
+- **Edición limpia:** en construcción.
+- **Publicación incremental:** prevista por unidades de aprendizaje.
+
+---
+
+## Estructura del repositorio
+
+```text
+.
+├── docs/                  # Edición web publicable
+├── chapters/              # Nueva edición Jupyter Book
+├── _config.yml            # Configuración del libro
+├── _toc.yml               # Tabla de contenidos del libro
+├── docs/                  # Material editorial previo y transición
+├── mkdocs.yml             # Configuración previa MkDocs, transitoria
+├── requirements.txt       # Dependencias de publicación
+├── .github/workflows/     # Despliegue con GitHub Pages
+├── 00-Presaberes/         # Material previo conservado
+├── 01-Analisis_.../       # Material previo conservado
+└── 02-Estructuras_.../    # Material previo conservado
+```
+
+La carpeta `chapters/` será la fuente de la nueva edición web tipo libro. Las carpetas históricas y la carpeta `docs/` se conservan mientras se decide qué contenido se migra, reescribe o retira.
+
+---
+
+## Desarrollo local
+
+Instalar dependencias:
+
+```bash
+pip install -r requirements.txt
+```
+
+Levantar el sitio:
+
+```bash
+jupyter-book build .
+```
+
+Construir versión estática:
+
+```bash
+jupyter-book build .
+```
+
+---
+
+## Licencia
+
+El código y los materiales del repositorio se distribuyen bajo licencia MIT, salvo que un archivo específico indique otra cosa.
+
+---
+
+## Nota final
+
+Este libro se construye con una ambición precisa: que aprender algoritmos no sea memorizar estructuras, sino adquirir una forma más clara, rigurosa y útil de pensar problemas de la vida real.
