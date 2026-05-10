@@ -1,8 +1,9 @@
 format: jb-book
-root: chapters/00-prefacio
+root: chapters/00-portada
 parts:
   - caption: Front Matter
     chapters:
+      - file: chapters/00-prefacio
       - file: chapters/00-como-leer-este-libro
   - caption: I. El lenguaje de las decisiones
     chapters:

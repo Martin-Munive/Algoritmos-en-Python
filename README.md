@@ -2,6 +2,10 @@
 
 **Algoritmos en Python para Medicina y Ciencias de la Vida**
 
+**Martin Munive**<br>
+Medico General<br>
+Analista y programador de software
+
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Jupyter Book](https://img.shields.io/badge/Jupyter%20Book-Sphinx-F37626?logo=jupyter&logoColor=white)](https://jupyterbook.org/)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-libro%20web-222222?logo=githubpages&logoColor=white)](https://martin-munive.github.io/Algoritmos-en-Python/)
@@ -17,7 +21,8 @@
 ## Leer el libro
 
 - **Sitio web:** <https://martin-munive.github.io/Algoritmos-en-Python/>
-- **Portada del libro:** [`chapters/00-prefacio.md`](chapters/00-prefacio.md)
+- **Portada del libro:** [`chapters/00-portada.md`](chapters/00-portada.md)
+- **Prefacio:** [`chapters/00-prefacio.md`](chapters/00-prefacio.md)
 - **Configuración del libro:** [`_config.yml`](_config.yml)
 - **Tabla de contenidos:** [`_toc.yml`](_toc.yml)
 - **Auditoría editorial previa:** [`docs/editorial_audit.md`](docs/editorial_audit.md)

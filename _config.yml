@@ -1,6 +1,6 @@
 title: Materia Medica Digitalis
-author: Martin Munive
-copyright: "2026"
+author: Martin Munive, Medico General; Analista y programador de software
+copyright: "2026 Martin Munive"
 logo: ""
 
 execute:
@@ -34,6 +34,10 @@ launch_buttons:
 
 sphinx:
   config:
+    html_static_path:
+      - _static
+    html_css_files:
+      - custom.css
     html_theme_options:
       home_page_in_toc: true
       repository_url: "https://github.com/Martin-Munive/Algoritmos-en-Python"
