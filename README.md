@@ -74,7 +74,7 @@ Al avanzar por el libro, el lector debería poder:
 
 ## Índice maestro
 
-La edición limpia organizará el libro en siete partes.
+La edición limpia organizará el libro como una progresión desde fundamentos hasta frontera científica.
 
 ### I. El lenguaje de las decisiones
 
@@ -95,16 +95,20 @@ La edición limpia organizará el libro en siete partes.
 - Automatización de tareas repetitivas
 - Validación de entradas
 
-### III. Algoritmos fundamentales
+### III. Algoritmos fundamentales con lectura biomédica
 
 - Búsqueda lineal y búsqueda binaria
+- Búsqueda en espacios de decisión
 - Ordenamiento y priorización
+- Hashing, índices y recuperación
 - Conteo, frecuencia y distribución
 - Filtrado de pacientes, eventos y resultados
 - Agrupación y resumen
 - Complejidad computacional
+- Recursividad y divide-and-conquer
 - Algoritmos voraces
 - Programación dinámica
+- Grafos y caminos
 
 ### IV. Datos médicos y razonamiento cuantitativo
 
@@ -114,6 +118,8 @@ La edición limpia organizará el libro en siete partes.
 - Triage y estratificación de riesgo
 - Series temporales en signos vitales
 - Alertas, umbrales e incertidumbre
+- Calibración, validación y sesgo
+- Modelos probabilísticos elementales
 
 ### V. Estructuras de datos para ciencias de la vida
 
@@ -125,7 +131,7 @@ La edición limpia organizará el libro en siete partes.
 - Índices y recuperación de información
 - Representación de conocimiento médico
 
-### VI. Casos aplicados
+### VI. Algoritmos para datos biomédicos
 
 - Calculadora de riesgo cardiovascular
 - Clasificador simple de urgencias
@@ -134,8 +140,32 @@ La edición limpia organizará el libro en siete partes.
 - Banco de preguntas médico con seguimiento de intentos
 - Sistema de priorización de pacientes
 - Mini motor de reglas clínicas
+- Series temporales de signos vitales
+- Señales fisiológicas
+- Texto médico y recuperación semántica
+- Imagen biomédica como matriz y señal
 
-### VII. Del algoritmo al sistema
+### VII. Bioinformática y genética computacional
+
+- Secuencias como estructuras de datos
+- Distancia, similitud y alineamiento
+- Programación dinámica en bioinformática
+- Búsqueda en genomas grandes
+- Variantes genéticas
+- Redes génicas
+- Datos ómicos
+- Interpretación computacional de evidencia molecular
+
+### VIII. Neurología computacional y sistemas complejos
+
+- Señales neurológicas
+- Grafos cerebrales
+- Modelos dinámicos
+- Redes neuronales biológicas y artificiales
+- Aprendizaje, plasticidad y representación
+- Límites de la analogía cerebro-computador
+
+### IX. Del algoritmo al sistema
 
 - Organización de proyectos Python
 - Pruebas y verificación
@@ -143,6 +173,15 @@ La edición limpia organizará el libro en siete partes.
 - Interfaces simples
 - Ética, seguridad y responsabilidad
 - Límites de la automatización clínica
+
+### X. Frontera, modelos y responsabilidad
+
+- Algoritmos en medicina de precisión
+- Modelos fundacionales en biomedicina
+- Sistemas de soporte de decisión
+- Agentes y herramientas longitudinales
+- Explicabilidad, incertidumbre y seguridad
+- Sesgo, responsabilidad y límites de automatización
 
 ---
 
@@ -157,6 +196,17 @@ La reconstrucción comenzará con una unidad breve, coherente y publicable:
 5. **Variables, datos y decisiones:** primera conexión formal con Python.
 
 Cada entrega buscará ser una unidad de aprendizaje completa, no una cuota arbitraria de páginas.
+
+Cada tema científico se desarrollará con un protocolo explícito:
+
+1. bibliografía y fuentes disponibles;
+2. definiciones clásicas;
+3. ejemplos canónicos;
+4. revisión de vanguardia;
+5. modelos mentales expertos;
+6. argumentos críticos;
+7. preguntas de evaluación profunda;
+8. recursos visuales, código o notebooks cuando aporten claridad.
 
 ---
 

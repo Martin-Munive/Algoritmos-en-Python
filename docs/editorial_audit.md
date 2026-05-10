@@ -23,6 +23,8 @@ Hasta ahora, sin embargo, funcionaba más como repositorio estructurado en Markd
 2. El tamaño del índice puede crecer desordenadamente si no se gobierna bien.
 3. Algunos capítulos pueden tener estilos distintos al haber sido escritos en momentos distintos.
 4. El libro puede quedar demasiado amplio si no se prioriza bien la progresión.
+5. El libro puede parecer superficial si termina en ejemplos introductorios como calculadoras o clasificadores simples.
+6. El libro puede dañar la imagen intelectual del autor si confunde claridad con simplificacion escolar.
 
 ## Diagnóstico
 
@@ -53,7 +55,24 @@ La migración no debe ser mecánica. Cada capítulo debe reescribirse o normaliz
 - utilidad para el lector;
 - claridad técnica;
 - consistencia con la promesa `Algoritmos en Python para Medicina y Ciencias de la Vida`;
-- compatibilidad real con MkDocs/GitHub Pages.
+- compatibilidad real con Jupyter Book/Sphinx/GitHub Pages;
+- bibliografia cientifica y tecnica disponible;
+- capacidad de progresar desde fundamentos hacia frontera.
+
+## Decisión editorial 2026-05-10
+
+El libro debe tener una ambicion mayor que introducir Python con ejemplos medicos.
+
+Decision:
+- los ejemplos como calculadora de riesgo cardiovascular, clasificador de urgencias o mini motor de reglas pertenecen al tramo inicial o intermedio;
+- el tramo avanzado debe conducir a algoritmos de bioinformatica, genetica computacional, neurologia computacional, redes biologicas, modelos probabilisticos, medicina de precision y sistemas de soporte de decision;
+- cada tema debe pasar por un protocolo de fuentes, modelos mentales, argumentos criticos y evaluacion profunda antes de convertirse en texto publicable;
+- el libro debe entrenar al autor/usuario en la materia mientras produce paginas publicables;
+- toda afirmacion cientifica fuerte debe apoyarse en bibliografia, fuente primaria, fuente tecnica o declararse como interpretacion razonada.
+
+La pregunta editorial que gobierna cada unidad sera:
+
+> Esto ensena un concepto de forma clara sin reducirlo por debajo de la inteligencia del lector ni del autor?
 
 El objetivo es iniciar una versión nueva y publicable sin perder el valor acumulado del repositorio previo.
 
@@ -63,7 +82,7 @@ El objetivo es iniciar una versión nueva y publicable sin perder el valor acumu
    - `Materia Medica Digitalis`
 2. Usar como subtítulo:
    - `Algoritmos en Python para Medicina y Ciencias de la Vida`
-3. Migrar progresivamente los capítulos a la carpeta `docs/`.
+3. Migrar progresivamente los capitulos a la estructura `chapters/` de Jupyter Book.
 4. Mantener el índice maestro como brújula, pero con control de alcance.
 
 ## Próximo paso recomendado
