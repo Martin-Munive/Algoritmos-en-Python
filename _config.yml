@@ -19,10 +19,10 @@ html:
   use_issues_button: true
   use_repository_button: true
   use_edit_page_button: true
-  baseurl: "https://martin-munive.github.io/Algoritmos-en-Python/"
+  baseurl: "https://martin-munive.github.io/Materia_Medica_Digitalis/"
 
 repository:
-  url: "https://github.com/Martin-Munive/Algoritmos-en-Python"
+  url: "https://github.com/Martin-Munive/Materia_Medica_Digitalis"
   path_to_book: ""
   branch: "main"
 
@@ -37,7 +37,7 @@ sphinx:
       - custom.css
     html_theme_options:
       home_page_in_toc: true
-      repository_url: "https://github.com/Martin-Munive/Algoritmos-en-Python"
+      repository_url: "https://github.com/Martin-Munive/Materia_Medica_Digitalis"
       use_repository_button: true
       use_issues_button: true
       use_edit_page_button: true

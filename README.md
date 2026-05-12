@@ -8,7 +8,7 @@ Analista y programador de software
 
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Jupyter Book](https://img.shields.io/badge/Jupyter%20Book-Sphinx-F37626?logo=jupyter&logoColor=white)](https://jupyterbook.org/)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-libro%20web-222222?logo=githubpages&logoColor=white)](https://martin-munive.github.io/Algoritmos-en-Python/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-libro%20web-222222?logo=githubpages&logoColor=white)](https://martin-munive.github.io/Materia_Medica_Digitalis/)
 [![Estado](https://img.shields.io/badge/estado-edici%C3%B3n%20limpia%20en%20construcci%C3%B3n-F59E0B)](#estado-editorial)
 [![Licencia](https://img.shields.io/badge/licencia-MIT-16A34A)](LICENSE)
 
@@ -20,13 +20,15 @@ Analista y programador de software
 
 ## Leer el libro
 
-- **Sitio web:** <https://martin-munive.github.io/Algoritmos-en-Python/>
+- **Sitio web:** <https://martin-munive.github.io/Materia_Medica_Digitalis/>
 - **Portada del libro:** [`chapters/00-portada.md`](chapters/00-portada.md)
 - **Prefacio:** [`chapters/00-prefacio.md`](chapters/00-prefacio.md)
+- **Presaberes mínimos:** [`chapters/00-presaberes-minimos.md`](chapters/00-presaberes-minimos.md)
 - **Configuración del libro:** [`_config.yml`](_config.yml)
 - **Tabla de contenidos:** [`_toc.yml`](_toc.yml)
 - **Auditoría editorial previa:** [`docs/editorial_audit.md`](docs/editorial_audit.md)
 - **Hoja de ruta previa:** [`docs/roadmap.md`](docs/roadmap.md)
+- **Auditoría de estructura heredada:** [`docs/legacy_structure_audit.md`](docs/legacy_structure_audit.md)
 
 > El libro está en reconstrucción editorial. El contenido previo se conserva en el historial Git como cantera técnica, pero la rama activa contiene solo la nueva edición web.
 
@@ -81,6 +83,8 @@ La edición limpia organizará el libro como una progresión desde fundamentos h
 - Qué es un algoritmo
 - Pensar en pasos
 - Variables, datos y decisiones
+- Estados, condiciones y umbrales
+- Excepciones, datos faltantes y trazabilidad
 - Condicionales
 - Bucles
 - Funciones

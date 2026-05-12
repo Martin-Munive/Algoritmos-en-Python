@@ -22,4 +22,8 @@ Esta primera infraestructura convierte el libro en un sitio publicable desde el 
 
 El libro no debe cerrarse en ejemplos introductorios como calculadoras de riesgo o clasificadores simples. Esos ejemplos son utiles para comenzar, pero la obra debe avanzar hacia algoritmos avanzados, modelos cientificos y problemas de investigacion contemporanea.
 
-Cada tema debe trabajarse con fuentes, definiciones clasicas, ejemplos canonicos, vanguardia, modelos mentales expertos, argumentos criticos y preguntas que distingan comprension profunda de memorizacion.
+Cada tema debe trabajarse con fuentes, entrada historica cuando aporte valor, definiciones clasicas, ejemplos canonicos, vanguardia, modelos mentales expertos, argumentos criticos y preguntas que distingan comprension profunda de memorizacion.
+
+## Regla de estructura editorial
+
+En este proyecto, una pagina del sitio no debe confundirse automaticamente con un capitulo del libro. Cuando varias paginas desarrollan una misma unidad intelectual, deben agruparse como secciones bajo un capitulo contenedor. La primera unidad queda definida como **El lenguaje de las decisiones**, con secciones sobre algoritmo, pensamiento por pasos y representacion mediante variables, datos y decisiones.

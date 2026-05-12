@@ -5,11 +5,14 @@ parts:
     chapters:
       - file: chapters/00-prefacio
       - file: chapters/00-como-leer-este-libro
-  - caption: I. El lenguaje de las decisiones
+      - file: chapters/00-presaberes-minimos
+  - caption: I. Fundamentos del pensamiento algorítmico
     chapters:
-      - file: chapters/01-que-es-un-algoritmo
-      - file: chapters/02-pensar-en-pasos
-      - file: chapters/03-variables-datos-decisiones
+      - file: chapters/01-el-lenguaje-de-las-decisiones
+        sections:
+          - file: chapters/01-que-es-un-algoritmo
+          - file: chapters/02-pensar-en-pasos
+          - file: chapters/03-variables-datos-decisiones
   - caption: Apéndices
     chapters:
       - file: chapters/apendice-a-entorno
