@@ -13,9 +13,6 @@ exclude_patterns:
   - .venv/**
   - _build/**
   - .github/**
-  - 00-Presaberes/**
-  - 01-Analisis_de_Complejidad_Big_O/**
-  - 02-Estructuras_de_Datos_Lineales/**
 
 html:
   favicon: ""

@@ -48,7 +48,7 @@ La decisión vigente es recuperar la esencia completa del libro:
 - casos de salud digital;
 - progresión pedagógica.
 
-Con esa esencia recuperada, el libro debe contrastarse con los análisis editoriales ya realizados y reconstruirse como libro web desde una base limpia, usando el contenido existente como fuente y cantera, no como estructura obligatoria.
+Con esa esencia recuperada, el libro debe contrastarse con los análisis editoriales ya realizados y reconstruirse como libro web desde una base limpia. El contenido previo queda como fuente y cantera en el historial Git, no como estructura obligatoria visible en la rama activa.
 
 La migración no debe ser mecánica. Cada capítulo debe reescribirse o normalizarse según:
 - función dentro del índice;
@@ -67,6 +67,7 @@ Decision:
 - los ejemplos como calculadora de riesgo cardiovascular, clasificador de urgencias o mini motor de reglas pertenecen al tramo inicial o intermedio;
 - el tramo avanzado debe conducir a algoritmos de bioinformatica, genetica computacional, neurologia computacional, redes biologicas, modelos probabilisticos, medicina de precision y sistemas de soporte de decision;
 - cada tema debe pasar por un protocolo de fuentes, modelos mentales, argumentos criticos y evaluacion profunda antes de convertirse en texto publicable;
+- cada capitulo o tema importante debe incluir una entrada historica breve cuando el origen, episodio, dato curioso o aplicacion historica ayude a entender el concepto;
 - el libro debe entrenar al autor/usuario en la materia mientras produce paginas publicables;
 - toda afirmacion cientifica fuerte debe apoyarse en bibliografia, fuente primaria, fuente tecnica o declararse como interpretacion razonada.
 
@@ -75,6 +76,15 @@ La pregunta editorial que gobierna cada unidad sera:
 > Esto ensena un concepto de forma clara sin reducirlo por debajo de la inteligencia del lector ni del autor?
 
 El objetivo es iniciar una versión nueva y publicable sin perder el valor acumulado del repositorio previo.
+
+## Limpieza editorial 2026-05-11
+
+Las carpetas heredadas `00-Presaberes`, `01-Analisis_de_Complejidad_Big_O` y `02-Estructuras_de_Datos_Lineales` fueron retiradas de la rama activa.
+
+Decision:
+- no publicar ni mostrar en GitHub la estructura antigua mientras se reconstruye el libro;
+- conservar el material en el historial Git para recuperarlo si aporta valor;
+- reintroducir Big O, estructuras de datos y presaberes solo cuando encajen en la nueva progresion editorial.
 
 ## Recomendación preliminar
 

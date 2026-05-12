@@ -28,7 +28,7 @@ Analista y programador de software
 - **Auditoría editorial previa:** [`docs/editorial_audit.md`](docs/editorial_audit.md)
 - **Hoja de ruta previa:** [`docs/roadmap.md`](docs/roadmap.md)
 
-> El libro está en reconstrucción editorial. El contenido previo del repositorio se conserva como cantera técnica, pero la edición web se está rehaciendo desde una base limpia.
+> El libro está en reconstrucción editorial. El contenido previo se conserva en el historial Git como cantera técnica, pero la rama activa contiene solo la nueva edición web.
 
 ---
 
@@ -200,13 +200,14 @@ Cada entrega buscará ser una unidad de aprendizaje completa, no una cuota arbit
 Cada tema científico se desarrollará con un protocolo explícito:
 
 1. bibliografía y fuentes disponibles;
-2. definiciones clásicas;
-3. ejemplos canónicos;
-4. revisión de vanguardia;
-5. modelos mentales expertos;
-6. argumentos críticos;
-7. preguntas de evaluación profunda;
-8. recursos visuales, código o notebooks cuando aporten claridad.
+2. entrada histórica breve cuando el origen, episodio o aplicación histórica ilumine el concepto;
+3. definiciones clásicas;
+4. ejemplos canónicos;
+5. revisión de vanguardia;
+6. modelos mentales expertos;
+7. argumentos críticos;
+8. preguntas de evaluación profunda;
+9. recursos visuales, código o notebooks cuando aporten claridad.
 
 ---
 
@@ -226,7 +227,7 @@ Estado actual:
 
 - **Identidad editorial:** definida.
 - **Stack web:** Jupyter Book + Sphinx + GitHub Pages.
-- **Contenido previo:** conservado como fuente de reconstrucción.
+- **Contenido previo:** conservado en el historial Git como fuente de reconstrucción.
 - **Edición limpia:** en construcción.
 - **Publicación incremental:** prevista por unidades de aprendizaje.
 
@@ -236,20 +237,16 @@ Estado actual:
 
 ```text
 .
-├── docs/                  # Edición web publicable
 ├── chapters/              # Nueva edición Jupyter Book
 ├── _config.yml            # Configuración del libro
 ├── _toc.yml               # Tabla de contenidos del libro
-├── docs/                  # Material editorial previo y transición
-├── mkdocs.yml             # Configuración previa MkDocs, transitoria
+├── docs/                  # Documentación editorial interna
 ├── requirements.txt       # Dependencias de publicación
-├── .github/workflows/     # Despliegue con GitHub Pages
-├── 00-Presaberes/         # Material previo conservado
-├── 01-Analisis_.../       # Material previo conservado
-└── 02-Estructuras_.../    # Material previo conservado
+├── _static/               # Estilos y recursos del libro
+└── .github/workflows/     # Despliegue con GitHub Pages
 ```
 
-La carpeta `chapters/` será la fuente de la nueva edición web tipo libro. Las carpetas históricas y la carpeta `docs/` se conservan mientras se decide qué contenido se migra, reescribe o retira.
+La carpeta `chapters/` es la fuente de la nueva edición web tipo libro. Las carpetas heredadas de la etapa anterior fueron retiradas de la rama activa para que GitHub muestre una edición limpia; siguen disponibles en el historial Git si se necesitan como cantera.
 
 ---
 
