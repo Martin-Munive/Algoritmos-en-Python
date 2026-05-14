@@ -16,3 +16,4 @@ parts:
   - caption: Apéndices
     chapters:
       - file: chapters/apendice-a-entorno
+      - file: chapters/glosario
