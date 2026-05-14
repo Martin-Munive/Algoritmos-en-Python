@@ -135,6 +135,37 @@ Antes de redactar un tema:
 8. Crear preguntas de evaluación profunda.
 9. Decidir si el tema requiere imagen, animación, código, notebook, simulación o recurso interactivo.
 10. Redactar con bibliografía vinculada.
+11. Actualizar el glosario maestro con los términos nuevos o redefinidos que el lector necesitará para leer el capítulo y los capítulos posteriores.
+12. Verificar que el texto final sea una digestión propia de las fuentes, no una transcripción encubierta.
+
+## Directiva de glosario cíclico
+
+Cada capítulo, sección densa o tema importante debe cerrar con una revisión del glosario.
+
+La revisión es obligatoria aunque no siempre produzca cambios. En cada ciclo editorial se debe preguntar:
+
+1. Qué términos nuevos aparecieron.
+2. Qué términos ya existían pero necesitan precisión.
+3. Qué términos deben conservar una definición breve en el glosario maestro.
+4. Qué términos deben explicarse solo dentro del capítulo para no inflar el glosario.
+5. Qué términos conectan varias áreas del libro y por tanto deben quedar normalizados.
+
+Regla operativa:
+- si el término será usado en más de un capítulo, entra al glosario maestro;
+- si el término es crucial para entender una sección pero no tendrá recurrencia, puede quedar explicado localmente;
+- si una definición cambia por madurez conceptual del libro, se actualiza el glosario y se revisan las apariciones anteriores;
+- ningún capítulo se considera editorialmente cerrado hasta revisar si el glosario debe actualizarse.
+
+## Directiva de integridad textual
+
+Las fuentes se usan para comprender, contrastar y fundamentar. El texto publicable debe ser una síntesis original, escrita con voz propia y con atribución explícita.
+
+Reglas:
+- no copiar párrafos, frases extensas ni estructuras explicativas distintivas de una fuente sin comillas y referencia;
+- evitar paráfrasis demasiado pegadas a la sintaxis del autor consultado;
+- cuando una formulación clásica se conserve por precisión, atribuirla de forma explícita y limitarla a lo necesario;
+- distinguir entre dato histórico, definición canónica, interpretación propia y ejemplo pedagógico;
+- toda afirmación científica fuerte debe tener fuente identificable o declararse como razonamiento editorial.
 
 ## Plantilla para capítulos o temas importantes
 

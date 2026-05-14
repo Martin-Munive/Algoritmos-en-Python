@@ -173,7 +173,7 @@ paciente_id | edad | presion_sistolica | saturacion_oxigeno | clasificacion
 003         | 80   | 135               | 96                 | sin_criterios
 ```
 
-La ciencia de datos moderna insiste en que la organización de datos no es secundaria. El principio de datos ordenados de Wickham es una formulación conocida: cada variable debe formar una columna, cada observación una fila y cada tipo de unidad observacional una tabla. No siempre será suficiente para problemas complejos, pero es una disciplina inicial poderosa.
+La ciencia de datos moderna insiste en que la organización de datos no es secundaria. En la formulación de *tidy data* propuesta por Wickham, la disciplina inicial consiste en separar variables, observaciones y unidades observacionales de manera sistemática. No siempre será suficiente para problemas complejos, pero es una regla de organización poderosa para empezar a pensar datos tabulares.
 
 En biomedicina, sin embargo, las tablas simples se quedan cortas rápidamente. Una imagen es una matriz o tensor. Una señal electrofisiológica es una serie temporal. Una red de interacciones puede ser un grafo. Una secuencia genética es una cadena con estructura, índices y anotaciones. Por eso este libro no se quedará en variables escalares: las usará como puerta de entrada a estructuras de datos.
 
@@ -256,4 +256,3 @@ Estas preguntas buscan criterio, no memoria. Están ordenadas de mayor a menor d
 ## Siguiente paso
 
 Ahora podemos avanzar hacia condiciones, umbrales y estados. Si una variable permite representar una parte del mundo, una condición decide cuándo esa representación cambia el curso del procedimiento.
-

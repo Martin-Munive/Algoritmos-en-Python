@@ -77,6 +77,25 @@ La pregunta editorial que gobierna cada unidad será:
 
 El objetivo es iniciar una versión nueva y publicable sin perder el valor acumulado del repositorio previo.
 
+## Directiva editorial 2026-05-14: integridad textual y glosario vivo
+
+El libro debe apoyarse en bibliografía científica, técnica e histórica sin copiar la voz ni el texto de las fuentes.
+
+Decisión:
+- el resultado publicable debe ser digestión intelectual propia;
+- las fuentes se citan para sustentar afirmaciones, no para transferir bloques de texto al libro;
+- las formulaciones clásicas solo pueden conservarse de forma breve, atribuida y cuando la precisión lo justifique;
+- se evitarán paráfrasis demasiado cercanas a la estructura verbal de los autores;
+- la bibliografía debe acompañar los temas, pero no reemplazar la elaboración conceptual del autor.
+
+Además, el glosario queda definido como una sección viva del libro. No debe abandonarse después de su creación inicial.
+
+Regla:
+- cada capítulo o tema importante debe revisar y actualizar el glosario maestro antes de considerarse terminado;
+- los términos recurrentes, transversales o necesarios para capítulos posteriores deben entrar al glosario;
+- los términos locales pueden quedar explicados en el capítulo si no tendrán recurrencia;
+- toda redefinición importante debe propagarse al glosario y, si corresponde, a capítulos anteriores.
+
 ## Limpieza editorial 2026-05-11
 
 Las carpetas heredadas `00-Presaberes`, `01-Analisis_de_Complejidad_Big_O` y `02-Estructuras_de_Datos_Lineales` fueron retiradas de la rama activa.

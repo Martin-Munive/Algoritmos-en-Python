@@ -27,3 +27,9 @@ Cada tema debe trabajarse con fuentes, entrada histórica cuando aporte valor, d
 ## Regla de estructura editorial
 
 En este proyecto, una página del sitio no debe confundirse automáticamente con un capítulo del libro. Cuando varias páginas desarrollan una misma unidad intelectual, deben agruparse como secciones bajo un capítulo contenedor. La primera unidad queda definida como **El lenguaje de las decisiones**, con secciones sobre algoritmo, pensamiento por pasos y representación mediante variables, datos y decisiones.
+
+## Reglas editoriales vivas
+
+- El texto publicable debe ser una síntesis propia de las fuentes, no copia ni paráfrasis pegada a autores consultados.
+- Las fuentes sustentan, contrastan y orientan; no reemplazan la voz del libro.
+- El glosario es una sección viva: debe revisarse con cada capítulo o tema importante y actualizarse cuando aparezcan términos recurrentes, transversales o necesarios para la progresión.
