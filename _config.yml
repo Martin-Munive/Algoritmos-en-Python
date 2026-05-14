@@ -12,13 +12,15 @@ exclude_patterns:
   - venv/**
   - .venv/**
   - _build/**
+  - _sources/**
   - .github/**
 
 html:
   favicon: ""
-  use_issues_button: true
-  use_repository_button: true
-  use_edit_page_button: true
+  use_issues_button: false
+  use_repository_button: false
+  use_edit_page_button: false
+  use_download_button: false
   baseurl: "https://martin-munive.github.io/Materia_Medica_Digitalis/"
 
 repository:
@@ -31,6 +33,8 @@ launch_buttons:
 
 sphinx:
   config:
+    html_copy_source: false
+    html_show_sourcelink: false
     html_static_path:
       - _static
     html_css_files:
@@ -38,6 +42,7 @@ sphinx:
     html_theme_options:
       home_page_in_toc: true
       repository_url: "https://github.com/Martin-Munive/Materia_Medica_Digitalis"
-      use_repository_button: true
-      use_issues_button: true
-      use_edit_page_button: true
+      use_repository_button: false
+      use_issues_button: false
+      use_edit_page_button: false
+      use_download_button: false
