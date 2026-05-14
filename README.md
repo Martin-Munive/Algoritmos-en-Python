@@ -8,45 +8,31 @@ Analista y programador de software
 
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Jupyter Book](https://img.shields.io/badge/Jupyter%20Book-Sphinx-F37626?logo=jupyter&logoColor=white)](https://jupyterbook.org/)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-libro%20web-222222?logo=githubpages&logoColor=white)](https://martin-munive.github.io/Materia_Medica_Digitalis/)
-[![Estado](https://img.shields.io/badge/estado-edici%C3%B3n%20limpia%20en%20construcci%C3%B3n-F59E0B)](#estado-editorial)
+[![Libro web](https://img.shields.io/badge/Libro%20web-GitHub%20Pages-222222?logo=githubpages&logoColor=white)](https://martin-munive.github.io/Materia_Medica_Digitalis/)
 [![Licencia](https://img.shields.io/badge/licencia-MIT-16A34A)](LICENSE)
 
-> Un libro web para aprender algoritmos desde problemas biomédicos: datos clínicos, decisiones, riesgo, estructuras de información, seguimiento de pacientes y sistemas computacionales para ciencias de la vida.
+> Un libro web para estudiar algoritmos desde problemas biomédicos: datos clínicos, decisiones, riesgo, estructuras de información, seguimiento de pacientes y sistemas computacionales para ciencias de la vida.
 
-**Materia Médica Digitalis** nace de una premisa simple: los algoritmos se entienden mejor cuando dejan de ser abstracciones aisladas y se convierten en instrumentos para pensar problemas reales. Este libro usa Python como lenguaje de trabajo y la medicina como territorio de aplicación para construir pensamiento computacional con rigor, claridad y utilidad.
-
----
+**Materia Médica Digitalis** parte de una premisa sencilla: los algoritmos se entienden mejor cuando dejan de ser abstracciones aisladas y se convierten en instrumentos para pensar problemas reales. El libro usa Python como lenguaje de trabajo y la medicina como territorio de aplicación para construir pensamiento computacional con rigor, claridad y utilidad.
 
 ## Leer el libro
 
 - **Sitio web:** <https://martin-munive.github.io/Materia_Medica_Digitalis/>
-- **Portada del libro:** [`chapters/00-portada.md`](chapters/00-portada.md)
-- **Prefacio:** [`chapters/00-prefacio.md`](chapters/00-prefacio.md)
-- **Presaberes mínimos:** [`chapters/00-presaberes-mínimos.md`](chapters/00-presaberes-mínimos.md)
-- **Configuración del libro:** [`_config.yml`](_config.yml)
-- **Tabla de contenidos:** [`_toc.yml`](_toc.yml)
-- **Auditoría editorial previa:** [`docs/editorial_audit.md`](docs/editorial_audit.md)
-- **Hoja de ruta previa:** [`docs/roadmap.md`](docs/roadmap.md)
-- **Auditoría de estructura heredada:** [`docs/legacy_structure_audit.md`](docs/legacy_structure_audit.md)
+- **Portada:** <https://martin-munive.github.io/Materia_Medica_Digitalis/chapters/00-portada.html>
+- **Prefacio:** <https://martin-munive.github.io/Materia_Medica_Digitalis/chapters/00-prefacio.html>
+- **Presaberes mínimos:** <https://martin-munive.github.io/Materia_Medica_Digitalis/chapters/00-presaberes-minimos.html>
 
-> El libro está en reconstrucción editorial. El contenido previo se conserva en el historial Git como cantera técnica, pero la rama activa contiene solo la nueva edición web.
+## Qué es este libro
 
----
+Este libro estudia algoritmos, estructuras de datos y pensamiento computacional aplicado a medicina y ciencias de la vida.
 
-## Qué es este proyecto
-
-Este repositorio contiene la edición web de un libro sobre algoritmos, estructuras de datos y pensamiento computacional aplicado a medicina y ciencias de la vida.
-
-No es solo una colección de apuntes ni una lista de ejercicios. La aspiración editorial es construir una obra progresiva donde cada capítulo responda tres preguntas:
+No es una colección de apuntes ni una lista de ejercicios. La aspiración editorial es construir una obra progresiva donde cada capítulo responda tres preguntas:
 
 1. **Qué problema resuelve este concepto.**
 2. **Cómo se implementa con Python.**
 3. **Por qué importa en un contexto biomédico real.**
 
 El objetivo no es enseñar Python como sintaxis aislada. El objetivo es enseñar a razonar con algoritmos.
-
----
 
 ## Para quién es
 
@@ -59,9 +45,7 @@ Este libro está escrito para:
 
 No se asume formación avanzada en ciencias de la computación. Sí se espera curiosidad, paciencia y voluntad de pensar con precisión.
 
----
-
-## Promesa editorial
+## Promesa intelectual
 
 Al avanzar por el libro, el lector debería poder:
 
@@ -72,11 +56,7 @@ Al avanzar por el libro, el lector debería poder:
 - construir herramientas pequeñas, verificables y útiles;
 - entender por qué un algoritmo correcto puede ser clínicamente insuficiente si ignora contexto, sesgo o seguridad.
 
----
-
 ## Índice maestro
-
-La edición limpia organizará el libro como una progresión desde fundamentos hasta frontera científica.
 
 ### I. El lenguaje de las decisiones
 
@@ -187,101 +167,12 @@ La edición limpia organizará el libro como una progresión desde fundamentos h
 - Explicabilidad, incertidumbre y seguridad
 - Sesgo, responsabilidad y límites de automatización
 
----
-
-## Primer lanzamiento editorial
-
-La reconstrucción comenzará con una unidad breve, coherente y publicable:
-
-1. **Inicio:** promesa, audiencia y mapa del libro.
-2. **Prefacio:** por qué un médico o científico de la vida debe aprender algoritmos.
-3. **Qué es un algoritmo:** definición, intuición y ejemplos biomédicos.
-4. **Pensar en pasos:** del razonamiento clínico al procedimiento computacional.
-5. **Variables, datos y decisiones:** primera conexión formal con Python.
-
-Cada entrega buscará ser una unidad de aprendizaje completa, no una cuota arbitraria de páginas.
-
-Cada tema científico se desarrollará con un protocolo explícito:
-
-1. bibliografía y fuentes disponibles;
-2. entrada histórica breve cuando el origen, episodio o aplicación histórica ilumine el concepto;
-3. definiciones clásicas;
-4. ejemplos canónicos;
-5. revisión de vanguardia;
-6. modelos mentales expertos;
-7. argumentos críticos;
-8. preguntas de evaluación profunda;
-9. recursos visuales, código o notebooks cuando aporten claridad.
-
----
-
 ## Filosofía
 
 Un algoritmo no es una receta vacía. Es una forma de hacer explícita una decisión.
 
 En medicina y ciencias de la vida, esa decisión rara vez vive sola: aparece dentro de incertidumbre, datos incompletos, riesgos, umbrales, pacientes, poblaciones y consecuencias. Por eso este libro no separa la técnica del contexto. La técnica se estudia para pensar mejor.
 
----
-
-## Estado editorial
-
-El repositorio tuvo una primera etapa como colección de materiales sobre algoritmos y estructuras de datos. Esa etapa dejó contenido útil, pero la nueva edición requiere una arquitectura más limpia para publicarse como libro web.
-
-Estado actual:
-
-- **Identidad editorial:** definida.
-- **Stack web:** Jupyter Book + Sphinx + GitHub Pages.
-- **Contenido previo:** conservado en el historial Git como fuente de reconstrucción.
-- **Edición limpia:** en construcción.
-- **Publicación incremental:** prevista por unidades de aprendizaje.
-
----
-
-## Estructura del repositorio
-
-```text
-.
-├── chapters/              # Nueva edición Jupyter Book
-├── _config.yml            # Configuración del libro
-├── _toc.yml               # Tabla de contenidos del libro
-├── docs/                  # Documentación editorial interna
-├── requirements.txt       # Dependencias de publicación
-├── _static/               # Estilos y recursos del libro
-└── .github/workflows/     # Despliegue con GitHub Pages
-```
-
-La carpeta `chapters/` es la fuente de la nueva edición web tipo libro. Las carpetas heredadas de la etapa anterior fueron retiradas de la rama activa para que GitHub muestre una edición limpia; siguen disponibles en el historial Git si se necesitan como cantera.
-
----
-
-## Desarrollo local
-
-Instalar dependencias:
-
-```bash
-pip install -r requirements.txt
-```
-
-Levantar el sitio:
-
-```bash
-jupyter-book build .
-```
-
-Construir versión estática:
-
-```bash
-jupyter-book build .
-```
-
----
-
 ## Licencia
 
 El código y los materiales del repositorio se distribuyen bajo licencia MIT, salvo que un archivo específico indique otra cosa.
-
----
-
-## Nota final
-
-Este libro se construye con una ambición precisa: que aprender algoritmos no sea memorizar estructuras, sino adquirir una forma más clara, rigurosa y útil de pensar problemas de la vida real.
