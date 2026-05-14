@@ -1,9 +1,9 @@
-# Materia Medica Digitalis
+# Materia Médica Digitalis
 
 **Algoritmos en Python para Medicina y Ciencias de la Vida**
 
 **Martin Munive**<br>
-Medico General<br>
+Médico General<br>
 Analista y programador de software
 
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
@@ -14,7 +14,7 @@ Analista y programador de software
 
 > Un libro web para aprender algoritmos desde problemas biomédicos: datos clínicos, decisiones, riesgo, estructuras de información, seguimiento de pacientes y sistemas computacionales para ciencias de la vida.
 
-**Materia Medica Digitalis** nace de una premisa simple: los algoritmos se entienden mejor cuando dejan de ser abstracciones aisladas y se convierten en instrumentos para pensar problemas reales. Este libro usa Python como lenguaje de trabajo y la medicina como territorio de aplicación para construir pensamiento computacional con rigor, claridad y utilidad.
+**Materia Médica Digitalis** nace de una premisa simple: los algoritmos se entienden mejor cuando dejan de ser abstracciones aisladas y se convierten en instrumentos para pensar problemas reales. Este libro usa Python como lenguaje de trabajo y la medicina como territorio de aplicación para construir pensamiento computacional con rigor, claridad y utilidad.
 
 ---
 
@@ -23,7 +23,7 @@ Analista y programador de software
 - **Sitio web:** <https://martin-munive.github.io/Materia_Medica_Digitalis/>
 - **Portada del libro:** [`chapters/00-portada.md`](chapters/00-portada.md)
 - **Prefacio:** [`chapters/00-prefacio.md`](chapters/00-prefacio.md)
-- **Presaberes mínimos:** [`chapters/00-presaberes-minimos.md`](chapters/00-presaberes-minimos.md)
+- **Presaberes mínimos:** [`chapters/00-presaberes-mínimos.md`](chapters/00-presaberes-mínimos.md)
 - **Configuración del libro:** [`_config.yml`](_config.yml)
 - **Tabla de contenidos:** [`_toc.yml`](_toc.yml)
 - **Auditoría editorial previa:** [`docs/editorial_audit.md`](docs/editorial_audit.md)

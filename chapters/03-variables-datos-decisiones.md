@@ -10,38 +10,38 @@ presion_sistolica = 92
 frecuencia_respiratoria = 28
 ```
 
-La variable permite que el dato pueda usarse despues en una decision.
+La variable permite que el dato pueda usarse después en una decisión.
 
 ```python
 alto_riesgo = presion_sistolica < 90 or frecuencia_respiratoria > 30
 ```
 
-El codigo anterior no es una escala clinica completa. Es una miniatura: muestra como un dato puede alimentar una regla.
+El código anterior no es una escala clínica completa. Es una miniatura: muestra cómo un dato puede alimentar una regla.
 
 ## Datos no son decisiones
 
 Un error frecuente es confundir almacenar datos con razonar.
 
-Tener una lista de signos vitales no significa haber definido que hacer con ellos. Para convertir datos en decision necesitamos:
+Tener una lista de signos vitales no significa haber definido qué hacer con ellos. Para convertir datos en decisión necesitamos:
 
 - reglas;
 - umbrales;
 - contexto;
 - manejo de excepciones;
-- verificacion.
+- verificación.
 
-## Por que importa
+## Por qué importa
 
-En programacion biomédica, nombrar bien las variables no es estetica. Es seguridad cognitiva.
+En programación biomédica, nombrar bien las variables no es estética. Es seguridad cognitiva.
 
 ```python
 pas = 92
 ```
 
-es mas opaco que:
+es más opaco que:
 
 ```python
 presion_arterial_sistolica = 92
 ```
 
-El segundo nombre ocupa mas espacio, pero reduce ambiguedad. En sistemas donde los errores importan, la claridad tambien es una forma de control.
+El segundo nombre ocupa más espacio, pero reduce ambigüedad. En sistemas donde los errores importan, la claridad también es una forma de control.

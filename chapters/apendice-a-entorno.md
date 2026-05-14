@@ -1,8 +1,8 @@
-# Apendice A. Entorno de trabajo
+# Apéndice A. Entorno de trabajo
 
 Este libro usa Python como lenguaje principal.
 
-La edicion web esta construida con Jupyter Book y publicada como sitio estatico en GitHub Pages.
+La edición web está construida con Jupyter Book y publicada como sitio estático en GitHub Pages.
 
 ## Requisitos locales
 
@@ -21,4 +21,4 @@ _build/html
 
 ## Nota
 
-No todos los capitulos necesitan ser notebooks. La regla editorial es usar notebooks cuando ejecutar codigo sea parte esencial del aprendizaje, y Markdown cuando el objetivo sea explicar, ordenar o argumentar.
+No todos los capítulos necesitan ser notebooks. La regla editorial es usar notebooks cuando ejecutar código sea parte esencial del aprendizaje, y Markdown cuando el objetivo sea explicar, ordenar o argumentar.

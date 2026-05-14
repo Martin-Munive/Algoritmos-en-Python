@@ -1,46 +1,46 @@
-# Materia Medica Digitalis
+# Materia Médica Digitalis
 
 <div class="book-cover">
   <p class="book-kicker">Algoritmos en Python para Medicina y Ciencias de la Vida</p>
-  <h1>Materia Medica Digitalis</h1>
-  <p class="book-subtitle">Una introduccion rigurosa al pensamiento algorítmico para quienes trabajan con decisiones, datos, riesgo y sistemas vivos.</p>
+  <h1>Materia Médica Digitalis</h1>
+  <p class="book-subtitle">Una introducción rigurosa al pensamiento algorítmico para quienes trabajan con decisiones, datos, riesgo y sistemas vivos.</p>
   <div class="book-author">
     <strong>Martin Munive</strong><br />
-    Medico General<br />
+    Médico General<br />
     Analista y programador de software
   </div>
   <p class="book-rights">© 2026 Martin Munive. Todos los derechos reservados.</p>
 </div>
 
-## Proposito
+## Propósito
 
-Este libro nace de una conviccion: la medicina contemporanea, las ciencias de la vida y el software ya no pueden pensarse como territorios separados. El clinico interpreta datos, el investigador transforma observaciones en modelos, el programador vuelve ejecutable una decision y el analista convierte incertidumbre en estructura.
+Este libro nace de una convicción: la medicina contemporánea, las ciencias de la vida y el software ya no pueden pensarse como territorios separados. El clínico interpreta datos, el investigador transforma observaciones en modelos, el programador vuelve ejecutable una decisión y el analista convierte incertidumbre en estructura.
 
-**Materia Medica Digitalis** se ubica exactamente en esa interseccion.
+**Materia Médica Digitalis** se ubica exactamente en esa intersección.
 
-No es un manual de sintaxis. No es una coleccion de recetas. No es una introduccion escolar a la programacion. Es una formacion progresiva en pensamiento algorítmico para lectores que necesitan comprender como una idea se convierte en procedimiento, como un procedimiento se convierte en codigo y como el codigo, cuando toca dominios biomédicos, debe responder ante consecuencias reales.
+No es un manual de sintaxis. No es una colección de recetas. No es una introducción escolar a la programación. Es una formación progresiva en pensamiento algorítmico para lectores que necesitan comprender cómo una idea se convierte en procedimiento, cómo un procedimiento se convierte en código y cómo el código, cuando toca dominios biomédicos, debe responder ante consecuencias reales.
 
 ## Tesis
 
-Un algoritmo no es solamente una secuencia de instrucciones. Es una forma disciplinada de hacer explicita una decision.
+Un algoritmo no es solamente una secuencia de instrucciones. Es una forma disciplinada de hacer explícita una decisión.
 
-En medicina, esa decision puede clasificar riesgo, ordenar una evaluacion, priorizar una intervencion, detectar una excepcion o sostener seguimiento. En software, esa decision debe expresarse con datos, reglas, estados, condiciones, iteraciones y estructuras verificables.
+En medicina, esa decisión puede clasificar riesgo, ordenar una evaluación, priorizar una intervención, detectar una excepción o sostener seguimiento. En software, esa decisión debe expresarse con datos, reglas, estados, condiciones, iteraciones y estructuras verificables.
 
-El libro ensena Python porque Python permite escribir con claridad. Pero el objetivo mas profundo es otro: aprender a pensar con precision cuando el problema tiene datos incompletos, ambiguedad, costo, sesgo y consecuencias.
+El libro enseña Python porque Python permite escribir con claridad. Pero el objetivo más profundo es otro: aprender a pensar con precisión cuando el problema tiene datos incompletos, ambigüedad, costo, sesgo y consecuencias.
 
 ## Lectura
 
-La obra avanza desde los fundamentos del pensamiento algorítmico hacia estructuras de datos, complejidad, analisis, modelado y construccion de herramientas aplicadas a medicina y ciencias de la vida.
+La obra avanza desde los fundamentos del pensamiento algorítmico hacia estructuras de datos, complejidad, análisis, modelado y construcción de herramientas aplicadas a medicina y ciencias de la vida.
 
-Cada capitulo debe sostener cuatro preguntas:
+Cada capítulo debe sostener cuatro preguntas:
 
-1. Que decision o transformacion estamos intentando formalizar.
-2. Que estructura computacional permite expresarla.
-3. Que gana y que pierde el modelo al volverse codigo.
-4. Que exige el dominio biomédico para que el algoritmo no sea ingenuo.
+1. Qué decisión o transformación estamos intentando formalizar.
+2. Qué estructura computacional permite expresarla.
+3. Qué gana y qué pierde el modelo al volverse código.
+4. Qué exige el dominio biomédico para que el algoritmo no sea ingenuo.
 
 ## Entrada al libro
 
-Comienza por el prefacio si quieres entender la intencion de la obra. Entra al primer capitulo si quieres confrontar desde el inicio la pregunta central:
+Comienza por el prefacio si quieres entender la intención de la obra. Entra al primer capítulo si quieres confrontar desde el inicio la pregunta central:
 
-> Que significa pensar algorítmicamente cuando las decisiones importan?
+> ¿Qué significa pensar algorítmicamente cuando las decisiones importan?

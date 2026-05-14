@@ -1,32 +1,32 @@
 # Pensar en pasos
 
-Programar no empieza escribiendo codigo. Empieza haciendo una operacion mucho mas exigente: convertir una situacion confusa en una secuencia de decisiones examinables.
+Programar no empieza escribiendo código. Empieza haciendo una operación mucho más exigente: convertir una situación confusa en una secuencia de decisiones examinables.
 
-Un principiante cree que pensar en pasos es enumerar acciones. Un experto sabe que la secuencia es solo la superficie. Debajo hay una arquitectura: que se observa primero, que se descarta, que se conserva, que se mide, que se interpreta, que se hace si aparece una excepcion y que evidencia autoriza pasar al siguiente estado.
+Un principiante cree que pensar en pasos es enumerar acciones. Un experto sabe que la secuencia es solo la superficie. Debajo hay una arquitectura: que se observa primero, que se descarta, que se conserva, que se mide, que se interpreta, que se hace si aparece una excepción y que evidencia autoriza pasar al siguiente estado.
 
-En medicina esto es evidente. Un medico no evalua a un paciente como una masa indiferenciada de datos. Ordena. Pregunta por motivo de consulta, identifica signos de alarma, ubica antecedentes relevantes, examina, formula hipotesis, decide pruebas, interpreta resultados y actua. Ese orden no es decorativo. Reduce incertidumbre, protege memoria de trabajo y evita que una decision se adelante a la evidencia.
+En medicina esto es evidente. Un médico no evalúa a un paciente como una masa indiferenciada de datos. Ordena. Pregunta por motivo de consulta, identifica signos de alarma, ubica antecedentes relevantes, examina, formula hipótesis, decide pruebas, interpreta resultados y actúa. Ese orden no es decorativo. Reduce incertidumbre, protege memoria de trabajo y evita que una decisión se adelante a la evidencia.
 
-Un algoritmo hace algo parecido: transforma intuicion en procedimiento revisable.
+Un algoritmo hace algo parecido: transforma intuición en procedimiento revisable.
 
-## Origen historico: del metodo al procedimiento verificable
+## Origen histórico: del método al procedimiento verificable
 
-La idea de pensar en pasos no nacio con Python ni con los computadores personales. Es mucho mas antigua. El algoritmo de Euclides, descrito en *Elementos*, ya mostraba una intuicion poderosa: un problema matematico podia resolverse mediante una secuencia finita de operaciones repetibles. Siglos despues, Al-Juarismi sistematizo procedimientos aritmeticos y algebraicos cuyo nombre latinizado termino asociado a la palabra "algoritmo".
+La idea de pensar en pasos no nació con Python ni con los computadores personales. Es mucho más antigua. El algoritmo de Euclides, descrito en *Elementos*, ya mostraba una intuición poderosa: un problema matemático podía resolverse mediante una secuencia finita de operaciones repetibles. Siglos después, Al-Juarismi sistematizó procedimientos aritméticos y algebraicos cuyo nombre latinizado terminó asociado a la palabra "algoritmo".
 
-En el siglo XX, la pregunta se volvio mas radical. Turing no solo pregunto como resolver un calculo, sino que tipo de procedimiento podia considerarse mecanicamente ejecutable. Esa transicion importa porque separa dos niveles: una explicacion humana puede ser convincente, pero un procedimiento computable debe ser lo bastante explicito para ejecutarse sin intuicion tacita.
+En el siglo XX, la pregunta se volvió más radical. Turing no solo preguntó cómo resolver un cálculo, sino qué tipo de procedimiento podía considerarse mecánicamente ejecutable. Esa transición importa porque separa dos niveles: una explicación humana puede ser convincente, pero un procedimiento computable debe ser lo bastante explícito para ejecutarse sin intuición tácita.
 
-En medicina ocurre algo paralelo. Las listas de verificacion quirurgica de la OMS y los esquemas de triage no intentan reemplazar el juicio clinico; intentan convertir momentos de alto riesgo en secuencias visibles, auditables y menos dependientes de memoria, fatiga o improvisacion. El dato historico importante es este: la formalizacion por pasos no empobrece necesariamente el pensamiento experto. Bien disenada, lo protege de sus propios puntos ciegos.
+En medicina ocurre algo paralelo. Las listas de verificación quirúrgica de la OMS y los esquemas de triage no intentan reemplazar el juicio clínico; intentan convertir momentos de alto riesgo en secuencias visibles, auditables y menos dependientes de memoria, fatiga o improvisación. El dato histórico importante es este: la formalización por pasos no empobrece necesariamente el pensamiento experto. Bien diseñada, lo protege de sus propios puntos ciegos.
 
-## El paso no es una frase: es una unidad de decision
+## El paso no es una frase: es una unidad de decisión
 
-Una instruccion como esta parece clara:
+Una instrucción como esta parece clara:
 
 ```text
-Evalua si el paciente esta grave.
+Evalúa si el paciente está grave.
 ```
 
-Pero para un algoritmo no significa casi nada. No define variables, umbrales, excepciones, salida, prioridad ni criterio de terminacion. Un humano podria apoyarse en experiencia tacita. Un programa no.
+Pero para un algoritmo no significa casi nada. No define variables, umbrales, excepciones, salida, prioridad ni criterio de terminación. Un humano podría apoyarse en experiencia tácita. Un programa no.
 
-Una formulacion mas algorítmica seria:
+Una formulacion más algorítmica seria:
 
 ```text
 1. Medir estado de conciencia.
@@ -34,68 +34,68 @@ Una formulacion mas algorítmica seria:
 3. Medir frecuencia respiratoria.
 4. Medir saturacion de oxigeno.
 5. Identificar signos de choque, dificultad respiratoria o alteracion neurologica.
-6. Si algun criterio de emergencia esta presente, clasificar como alto riesgo.
+6. Si algún criterio de emergencia está presente, clasificar como alto riesgo.
 7. Si no hay criterio de emergencia, evaluar criterios de prioridad.
 8. Registrar clasificacion y motivo.
 ```
 
-Todavia falta validar los umbrales, ajustar poblaciones, definir excepciones y decidir que escala usar. Pero el pensamiento ya cambio. La gravedad dejo de ser una impresion global y empezo a convertirse en una estructura.
+Todavía falta validar los umbrales, ajustar poblaciones, definir excepciones y decidir qué escala usar. Pero el pensamiento ya cambió. La gravedad dejó de ser una impresión global y empezó a convertirse en una estructura.
 
-## Definicion de trabajo
+## Definición de trabajo
 
-Pensar en pasos no significa partir una tarea en frases pequenas. Significa construir una trayectoria controlada desde un estado inicial hasta un estado final, especificando que informacion se observa, que transformaciones se permiten, que condiciones autorizan avanzar, que excepciones interrumpen el proceso y que evidencia debe quedar registrada.
+Pensar en pasos no significa partir una tarea en frases pequeñas. Significa construir una trayectoria controlada desde un estado inicial hasta un estado final, especificando qué información se observa, qué transformaciones se permiten, qué condiciones autorizan avanzar, qué excepciones interrumpen el proceso y qué evidencia debe quedar registrada.
 
-En un contexto biomedico, esa definicion exige mas que orden. Exige prioridad. No todas las preguntas valen lo mismo cuando el tiempo, el riesgo y la incertidumbre son desiguales.
+En un contexto biomédico, esa definición exige más que orden. Exige prioridad. No todas las preguntas valen lo mismo cuando el tiempo, el riesgo y la incertidumbre son desiguales.
 
 ## Modelos mentales expertos
 
-### 1. Separar observacion, interpretacion y accion
+### 1. Separar observación, interpretación y acción
 
-El experto no mezcla dato bruto con decision final. Primero distingue que se observo, luego que significa y finalmente que conducta se justifica. Este modelo aparece en el proceso diagnostico descrito por las National Academies, donde la informacion se recolecta, integra e interpreta antes de tomar decisiones clinicas, y tambien en ETAT, donde los signos de emergencia preceden a la intervencion.
+El experto no mezcla dato bruto con decisión final. Primero distingue qué se observó, luego qué significa y finalmente qué conducta se justifica. Este modelo aparece en el proceso diagnóstico descrito por las National Academies, donde la información se recolecta, integra e interpreta antes de tomar decisiones clínicas, y también en ETAT, donde los signos de emergencia preceden a la intervención.
 
-Ejemplo: una saturacion de 88% no es por si sola "neumonia grave". Es un dato. Su interpretacion depende de contexto, tecnica de medicion, edad, enfermedad previa y signos asociados. La accion puede ser oxigeno, traslado, monitorizacion o busqueda de causa.
+Ejemplo: una saturación de 88% no es por sí sola "neumonía grave". Es un dato. Su interpretación depende de contexto, técnica de medición, edad, enfermedad previa y signos asociados. La acción puede ser oxígeno, traslado, monitorización o búsqueda de causa.
 
-### 2. Convertir ambiguedad en estados
+### 2. Convertir ambigüedad en estados
 
-Un sistema experto no intenta resolver todo en una sola frase. Define estados intermedios: no evaluado, estable, prioridad, emergencia, pendiente de dato, excepcion. Esta forma de pensar conecta con la teoria algorítmica clasica, que exige estados, entrada, salida y terminacion, y con la practica clinica, que distingue pacientes no evaluados de pacientes realmente estables.
+Un sistema experto no intenta resolver todo en una sola frase. Define estados intermedios: no evaluado, estable, prioridad, emergencia, pendiente de dato, excepción. Esta forma de pensar conecta con la teoría algorítmica clásica, que exige estados, entrada, salida y terminación, y con la práctica clínica, que distingue pacientes no evaluados de pacientes realmente estables.
 
-Ejemplo: un paciente sin presion arterial registrada no debe entrar automaticamente en "bajo riesgo". Debe entrar en un estado diferente: `dato_pendiente` o `evaluacion_incompleta`.
+Ejemplo: un paciente sin presión arterial registrada no debe entrar automáticamente en "bajo riesgo". Debe entrar en un estado diferente: `dato_pendiente` o `evaluacion_incompleta`.
 
 ### 3. Priorizar riesgos antes que comodidad computacional
 
-En salud, el orden de los pasos no se decide solo por elegancia tecnica. Se decide por consecuencias. ETAT clasifica rapido a los ninos con signos de emergencia porque el retraso cambia el desenlace. En cirugia, las listas de verificacion colocan puntos criticos antes de la incision y antes de salir del quirofano porque el momento de la pregunta modifica su valor.
+En salud, el orden de los pasos no se decide solo por elegancia técnica. Se decide por consecuencias. ETAT clasifica rápido a los niños con signos de emergencia porque el retraso cambia el desenlace. En cirugía, las listas de verificación colocan puntos críticos antes de la incisión y antes de salir del quirófano porque el momento de la pregunta modifica su valor.
 
-Ejemplo: en una interfaz clinica, preguntar alergias antes de recomendar un medicamento no es una preferencia de formulario. Es una restriccion de seguridad.
+Ejemplo: en una interfaz clínica, preguntar alergias antes de recomendar un medicamento no es una preferencia de formulario. Es una restricción de seguridad.
 
 ### 4. Hacer visibles las excepciones
 
-El pensamiento ingenuo disena el caso promedio. El pensamiento experto pregunta que rompe la regla. En programacion, una excepcion no es un estorbo: es informacion sobre los limites del modelo. En diagnostico, Croskerry ha insistido en que muchos errores no provienen de falta de datos, sino de fallas cognitivas, sesgos y heuristicas mal controladas.
+El pensamiento ingenuo diseña el caso promedio. El pensamiento experto pregunta qué rompe la regla. En programación, una excepción no es un estorbo: es información sobre los límites del modelo. En diagnóstico, Croskerry ha insistido en que muchos errores no provienen de falta de datos, sino de fallas cognitivas, sesgos y heurísticas mal controladas.
 
-Ejemplo: una regla para fiebre basada en `temperatura >= 38` puede fallar en inmunosuprimidos, ancianos, pacientes con antipireticos o mediciones poco confiables. El algoritmo debe permitir advertir ese limite.
+Ejemplo: una regla para fiebre basada en `temperatura >= 38` puede fallar en inmunosuprimidos, ancianos, pacientes con antipiréticos o mediciones poco confiables. El algoritmo debe permitir advertir ese límite.
 
-### 5. Diseñar para revision
+### 5. Diseñar para revisión
 
-Un procedimiento serio deja huellas. Si una clasificacion aparece, debe poder responder: que datos la produjeron, que regla se aplico, que excepciones se ignoraron, que paso falto y que version del criterio estaba vigente.
+Un procedimiento serio deja huellas. Si una clasificación aparece, debe poder responder: qué datos la produjeron, qué regla se aplicó, qué excepciones se ignoraron, qué paso faltó y qué versión del criterio estaba vigente.
 
-Ejemplo: "alto riesgo" no basta. Un sistema util debe registrar: `alto_riesgo_por = ["hipotension", "taquicardia", "fiebre"]`.
+Ejemplo: "alto riesgo" no basta. Un sistema útil debe registrar: `alto_riesgo_por = ["hipotension", "taquicardia", "fiebre"]`.
 
-## Donde se solapan
+## Dónde se solapan
 
-Estos modelos mentales se refuerzan mutuamente. Separar observacion, interpretacion y accion ayuda a convertir ambiguedad en estados. Definir estados permite capturar excepciones. Capturar excepciones facilita auditoria. Auditar obliga a priorizar riesgos de forma explicita.
+Estos modelos mentales se refuerzan mutuamente. Separar observación, interpretación y acción ayuda a convertir ambigüedad en estados. Definir estados permite capturar excepciones. Capturar excepciones facilita auditoría. Auditar obliga a priorizar riesgos de forma explícita.
 
 El meta-modelo que los engloba es este:
 
-> Pensar en pasos es disenar una trayectoria verificable desde datos incompletos hasta una decision responsable.
+> Pensar en pasos es diseñar una trayectoria verificable desde datos incompletos hasta una decisión responsable.
 
-## Donde crean tension
+## Dónde crean tensión
 
-Tambien hay tensiones. Un libro serio no debe ocultarlas.
+También hay tensiones. Un libro serio no debe ocultarlas.
 
-Un algoritmo muy detallado puede ser mas seguro, pero mas lento de usar. Un triage muy sensible puede detectar mas emergencias, pero sobrecargar el sistema. Un procedimiento muy flexible puede respetar contexto, pero volverse dificil de auditar. Una regla simple puede ser rapida, pero pobre ante pacientes complejos.
+Un algoritmo muy detallado puede ser más seguro, pero más lento de usar. Un triage muy sensible puede detectar más emergencias, pero sobrecargar el sistema. Un procedimiento muy flexible puede respetar contexto, pero volverse difícil de auditar. Una regla simple puede ser rápida, pero pobre ante pacientes complejos.
 
-La madurez consiste en reconocer que no existe "el paso correcto" en abstracto. Existe un orden defendible para un objetivo, un contexto, un riesgo y una poblacion.
+La madurez consiste en reconocer que no existe "el paso correcto" en abstracto. Existe un orden defendible para un objetivo, un contexto, un riesgo y una población.
 
-## De procedimiento humano a codigo
+## De procedimiento humano a código
 
 Podemos traducir una miniatura del razonamiento anterior a Python:
 
@@ -108,7 +108,7 @@ saturacion_oxigeno = 89
 criterios_emergencia = []
 
 if estado_conciencia_alterado:
-    criterios_emergencia.append("alteracion del estado de conciencia")
+    criterios_emergencia.append("alteración del estado de conciencia")
 
 if presion_sistolica < 90:
     criterios_emergencia.append("hipotension")
@@ -122,90 +122,90 @@ if saturacion_oxigeno < 90:
 if criterios_emergencia:
     clasificacion = "alto riesgo"
 else:
-    clasificacion = "evaluacion no urgente"
+    clasificacion = "evaluación no urgente"
 
 print(clasificacion)
 print(criterios_emergencia)
 ```
 
-Este codigo sigue siendo una simplificacion. No es una guia clinica. No reemplaza una escala validada. Pero ya muestra una diferencia decisiva: la salida no aparece sola. Viene acompañada de razones.
+Este código sigue siendo una simplificación. No es una guía clínica. No reemplaza una escala validada. Pero ya muestra una diferencia decisiva: la salida no aparece sola. Viene acompañada de razones.
 
 Ese cambio es enorme. Un algoritmo que da una respuesta sin razones puede servir para automatizar. Un algoritmo que conserva razones puede servir para aprender, auditar y mejorar.
 
-## Argumentos criticos
+## Argumentos críticos
 
 ### Desacuerdo 1: rapidez contra exhaustividad
 
-Pregunta: debe un algoritmo clinico pedir muchos datos para ser mas preciso o pocos datos para actuar rapido?
+Pregunta: ¿debe un algoritmo clínico pedir muchos datos para ser más preciso o pocos datos para actuar rápido?
 
-El argumento por rapidez es fuerte en triage: muchas muertes tempranas se previenen identificando signos de emergencia de inmediato, como enfatiza la estrategia ETAT de la OMS para clasificar y tratar ninos gravemente enfermos al ingreso. El argumento por exhaustividad es fuerte en diagnostico: las National Academies describen el diagnostico como un proceso complejo de recoleccion, integracion e interpretacion de informacion.
+El argumento por rapidez es fuerte en triage: muchas muertes tempranas se previenen identificando signos de emergencia de inmediato, como enfatiza la estrategia ETAT de la OMS para clasificar y tratar niños gravemente enfermos al ingreso. El argumento por exhaustividad es fuerte en diagnóstico: las National Academies describen el diagnóstico como un proceso complejo de recolección, integración e interpretación de información.
 
-Importa porque un sistema demasiado lento puede fallar en urgencias, pero uno demasiado simple puede pasar por alto diagnosticos complejos.
+Importa porque un sistema demasiado lento puede fallar en urgencias, pero uno demasiado simple puede pasar por alto diagnósticos complejos.
 
-Consenso emergente: no hay una unica profundidad correcta. La granularidad debe depender de riesgo, tiempo disponible, consecuencias del falso negativo, carga operativa y posibilidad de reevaluacion.
+Consenso emergente: no hay una única profundidad correcta. La granularidad debe depender de riesgo, tiempo disponible, consecuencias del falso negativo, carga operativa y posibilidad de reevaluación.
 
-### Desacuerdo 2: reglas explicitas contra juicio experto
+### Desacuerdo 2: reglas explícitas contra juicio experto
 
-Pregunta: cuanto debe formalizarse y cuanto debe dejarse al criterio clinico?
+Pregunta: ¿cuánto debe formalizarse y cuánto debe dejarse al criterio clínico?
 
-Las reglas explicitas permiten reproducibilidad, auditoria y programacion. El juicio experto permite reconocer patrones, excepciones y contexto que la regla no captura. El conflicto no se resuelve eliminando uno de los lados. Se resuelve disenando algoritmos que hagan explicito su alcance y permitan intervencion humana cuando la situacion excede el modelo.
+Las reglas explícitas permiten reproducibilidad, auditoría y programación. El juicio experto permite reconocer patrones, excepciones y contexto que la regla no captura. El conflicto no se resuelve eliminando uno de los lados. Se resuelve diseñando algoritmos que hagan explícito su alcance y permitan intervención humana cuando la situación excede el modelo.
 
-Consenso emergente: los procedimientos explicitos son especialmente utiles en tareas repetibles, de alto riesgo y sensibles a omisiones; pero deben declarar sus limites y no fingir que todo juicio clinico cabe en una regla.
+Consenso emergente: los procedimientos explícitos son especialmente útiles en tareas repetibles, de alto riesgo y sensibles a omisiones; pero deben declarar sus límites y no fingir que todo juicio clínico cabe en una regla.
 
 ### Desacuerdo 3: algoritmo como respuesta contra algoritmo como instrumento
 
-Pregunta: el algoritmo debe entregar una decision final o estructurar mejor el pensamiento?
+Pregunta: ¿el algoritmo debe entregar una decisión final o estructurar mejor el pensamiento?
 
-En sistemas de bajo riesgo, puede bastar una salida automatica. En medicina, con frecuencia el mayor valor del algoritmo no es sustituir al clinico, sino ordenar informacion, revelar omisiones y hacer visible la razon de una recomendacion. Esta distincion sera central en todo el libro.
+En sistemas de bajo riesgo, puede bastar una salida automática. En medicina, con frecuencia el mayor valor del algoritmo no es sustituir al clínico, sino ordenar información, revelar omisiones y hacer visible la razón de una recomendación. Esta distinción será central en todo el libro.
 
-Consenso emergente: en dominios biomedicos, el algoritmo mas valioso no siempre es el que decide por el humano, sino el que mejora la calidad de la representacion, reduce omisiones y permite revisar el razonamiento.
+Consenso emergente: en dominios biomédicos, el algoritmo más valioso no siempre es el que decide por el humano, sino el que mejora la calidad de la representación, reduce omisiones y permite revisar el razonamiento.
 
 ## Puente hacia la frontera
 
-La capacidad de pensar en pasos sera indispensable cuando el libro avance hacia problemas mas exigentes.
+La capacidad de pensar en pasos será indispensable cuando el libro avance hacia problemas más exigentes.
 
-En bioinformatica, un alineamiento de secuencias no es una comparacion intuitiva entre cadenas de ADN. Es una secuencia de decisiones sobre coincidencias, penalizaciones, brechas, costo y optimizacion. En neurologia computacional, analizar una senal electrofisiologica exige decidir ventanas temporales, filtros, artefactos, rasgos y estados. En medicina de precision, un sistema no puede limitarse a "predecir riesgo"; debe mostrar que datos uso, que supuestos hizo, que incertidumbre conserva y que accion es defendible.
+En bioinformática, un alineamiento de secuencias no es una comparación intuitiva entre cadenas de ADN. Es una secuencia de decisiones sobre coincidencias, penalizaciones, brechas, costo y optimización. En neurología computacional, analizar una señal electrofisiológica exige decidir ventanas temporales, filtros, artefactos, rasgos y estados. En medicina de precisión, un sistema no puede limitarse a "predecir riesgo"; debe mostrar qué datos usó, qué supuestos hizo, qué incertidumbre conserva y qué acción es defendible.
 
-Por eso esta seccion no es un tema menor de introduccion. Es la gramatica inicial de todo procedimiento cientifico computable.
+Por eso esta sección no es un tema menor de introducción. Es la gramática inicial de todo procedimiento científico computable.
 
 ## Evaluar si entendiste
 
-Estas preguntas no buscan memoria. Buscan criterio. Estan ordenadas de mayor a menor dificultad.
+Estas preguntas no buscan memoria. Buscan criterio. Están ordenadas de mayor a menor dificultad.
 
-1. Como disenarias un algoritmo que distinga entre "paciente estable" y "evaluacion incompleta" sin convertir la ausencia de datos en falsa tranquilidad?
-2. En que circunstancias una regla mas simple puede ser epistemicamente mas honesta y clinicamente mas segura que un modelo mas complejo?
-3. Como cambiaria tu secuencia de pasos si el objetivo no fuera diagnosticar, sino evitar muertes prevenibles en los primeros minutos de atencion?
-4. Que informacion minima necesitarias registrar para que una clasificacion de alto riesgo sea auditable seis meses despues?
-5. Donde trazarias el limite entre una excepcion que debe codificarse y una excepcion que debe escalarse a juicio humano?
-6. Como distinguirias dato, interpretacion y accion en un sistema de triage, y que dano produce mezclarlos?
-7. Que tension aparece entre sensibilidad y carga operativa en un sistema de alerta hospitalario?
-8. Por que una lista de verificacion puede fracasar si se implementa como ritual y no como arquitectura de decision?
-9. Que excepciones deberia contemplar una regla basada en temperatura corporal?
-10. Como sabrias si un ejemplo introductorio esta simplificando de forma pedagogica o deformando el problema?
+1. ¿Cómo diseñarías un algoritmo que distinga entre "paciente estable" y "evaluación incompleta" sin convertir la ausencia de datos en falsa tranquilidad?
+2. ¿En qué circunstancias una regla más simple puede ser epistémicamente más honesta y clínicamente más segura que un modelo más complejo?
+3. ¿Cómo cambiaría tu secuencia de pasos si el objetivo no fuera diagnosticar, sino evitar muertes prevenibles en los primeros minutos de atención?
+4. ¿Qué información mínima necesitarías registrar para que una clasificación de alto riesgo sea auditable seis meses después?
+5. ¿Dónde trazarías el límite entre una excepción que debe codificarse y una excepción que debe escalarse a juicio humano?
+6. ¿Cómo distinguirías dato, interpretación y acción en un sistema de triage, y qué daño produce mezclarlos?
+7. ¿Qué tensión aparece entre sensibilidad y carga operativa en un sistema de alerta hospitalario?
+8. ¿Por qué una lista de verificación puede fracasar si se implementa como ritual y no como arquitectura de decisión?
+9. ¿Qué excepciones debería contemplar una regla basada en temperatura corporal?
+10. ¿Cómo sabrías si un ejemplo introductorio está simplificando de forma pedagógica o deformando el problema?
 
-## Vacios de comprension que debes vigilar
+## Vacíos de comprensión que debes vigilar
 
-1. Confundir orden narrativo con estructura algorítmica. Que una explicacion suene ordenada no significa que sea ejecutable, auditable o segura.
+1. Confundir orden narrativo con estructura algorítmica. Que una explicación suene ordenada no significa que sea ejecutable, auditable o segura.
 2. Confundir dato faltante con dato normal. En medicina y ciencia, lo no medido no debe entrar silenciosamente como normalidad.
-3. Confundir automatizacion con inteligencia. Un sistema que produce una salida sin razones puede acelerar una mala decision.
+3. Confundir automatización con inteligencia. Un sistema que produce una salida sin razones puede acelerar una mala decisión.
 
-## Orden de estudio para las proximas 3 horas
+## Orden de estudio para las próximas 3 horas
 
-1. **Primera hora:** releer esta seccion y reescribir el ejemplo de triage separando observacion, interpretacion y accion.
-2. **Segunda hora:** estudiar el proceso diagnostico de las National Academies y compararlo con ETAT: que pasos aparecen en ambos y cuales cambian por el contexto.
-3. **Tercera hora:** implementar una version pequena del algoritmo con estados `dato_pendiente`, `alto_riesgo`, `prioridad` y `no_urgente`, registrando siempre la razon de la salida.
+1. **Primera hora:** releer esta sección y reescribir el ejemplo de triage separando observación, interpretación y acción.
+2. **Segunda hora:** estudiar el proceso diagnóstico de las National Academies y compararlo con ETAT: qué pasos aparecen en ambos y cuáles cambian por el contexto.
+3. **Tercera hora:** implementar una versión pequeña del algoritmo con estados `dato_pendiente`, `alto_riesgo`, `prioridad` y `no_urgente`, registrando siempre la razón de la salida.
 
-## Bibliografia y fuentes
+## Bibliografía y fuentes
 
-- Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. *Introduction to Algorithms*, 4th ed. MIT Press, 2022. <https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/>
-- National Academies of Sciences, Engineering, and Medicine. *Improving Diagnosis in Health Care*. National Academies Press, 2015. <https://www.ncbi.nlm.nih.gov/books/NBK338596/>
-- National Academies of Sciences, Engineering, and Medicine. "The Diagnostic Process", en *Improving Diagnosis in Health Care*. 2015. <https://www.ncbi.nlm.nih.gov/books/NBK338593/>
-- World Health Organization. *Emergency Triage Assessment and Treatment (ETAT) course*. 2005. <https://www.who.int/publications/i/item/9241546875>
-- Haynes, A. B., et al. "A Surgical Safety Checklist to Reduce Morbidity and Mortality in a Global Population." *New England Journal of Medicine*, 2009;360:491-499. Reproducido en WHO Guidelines for Safe Surgery 2009. <https://www.ncbi.nlm.nih.gov/books/NBK143241/>
-- Weiser, T. G., & Haynes, A. B. "Ten years of the Surgical Safety Checklist." *British Journal of Surgery*, 2018;105(8):927-929. <https://pubmed.ncbi.nlm.nih.gov/29770959/>
-- Croskerry, P. "Cognitive forcing strategies in clinical decisionmaking." *Annals of Emergency Medicine*, 2003;41(1):110-120. <https://pubmed.ncbi.nlm.nih.gov/12514691/>
-- Croskerry, P. "Clinical cognition and diagnostic error: applications of a dual process model of reasoning." *Advances in Health Sciences Education*, 2009;14 Suppl 1:27-35. <https://pubmed.ncbi.nlm.nih.gov/19669918/>
+- Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2022). *Introduction to algorithms* (4th ed.). MIT Press. <https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/>
+- Croskerry, P. (2003). Cognitive forcing strategies in clinical decisionmaking. *Annals of Emergency Medicine, 41*(1), 110-120. <https://pubmed.ncbi.nlm.nih.gov/12514691/>
+- Croskerry, P. (2009). Clinical cognition and diagnostic error: Applications of a dual process model of reasoning. *Advances in Health Sciences Education, 14*(Suppl. 1), 27-35. <https://pubmed.ncbi.nlm.nih.gov/19669918/>
+- Haynes, A. B., et al. (2009). A surgical safety checklist to reduce morbidity and mortality in a global population. *New England Journal of Medicine, 360*, 491-499. Reproducido en *WHO guidelines for safe surgery 2009*. <https://www.ncbi.nlm.nih.gov/books/NBK143241/>
+- National Academies of Sciences, Engineering, and Medicine. (2015). *Improving diagnosis in health care*. National Academies Press. <https://www.ncbi.nlm.nih.gov/books/NBK338596/>
+- National Academies of Sciences, Engineering, and Medicine. (2015). The diagnostic process. En *Improving diagnosis in health care*. National Academies Press. <https://www.ncbi.nlm.nih.gov/books/NBK338593/>
+- Weiser, T. G., & Haynes, A. B. (2018). Ten years of the surgical safety checklist. *British Journal of Surgery, 105*(8), 927-929. <https://pubmed.ncbi.nlm.nih.gov/29770959/>
+- World Health Organization. (2005). *Emergency triage assessment and treatment (ETAT) course*. <https://www.who.int/publications/i/item/9241546875>
 
 ## Siguiente paso
 
-Ahora podemos estudiar variables, datos y decisiones con mas precision: no como nombres para valores, sino como una teoria practica de representacion. Nombrar una variable es decidir que parte del mundo merece existir dentro del programa.
+Ahora podemos estudiar variables, datos y decisiones con más precisión: no como nombres para valores, sino como una teoría práctica de representación. Nombrar una variable es decidir qué parte del mundo merece existir dentro del programa.

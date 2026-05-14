@@ -1,30 +1,30 @@
-# Como leer este libro
+# Cómo leer este libro
 
-Este libro esta pensado para leerse en orden, pero tambien para consultarse por temas.
+Este libro está pensado para leerse en orden, pero también para consultarse por temas.
 
-La ruta principal avanza desde ideas basicas de algoritmo hasta estructuras de datos, razonamiento cuantitativo y casos aplicados en salud digital.
+La ruta principal avanza desde ideas básicas de algoritmo hasta estructuras de datos, razonamiento cuantitativo y casos aplicados en salud digital.
 
 ## Lectura recomendada
 
 Para una primera lectura:
 
-1. lee el capitulo completo;
+1. lee el capítulo completo;
 2. ejecuta los ejemplos;
-3. modifica una linea de codigo;
-4. observa que cambia;
-5. escribe una variacion propia;
+3. modifica una línea de código;
+4. observa qué cambia;
+5. escribe una variación propia;
 6. vuelve al texto y revisa la idea central.
 
 No basta con entender el resultado. Hay que entender el procedimiento.
 
-## Codigo
+## Código
 
-El codigo se usara como laboratorio.
+El código se usará como laboratorio.
 
-Algunos capitulos podran ser Markdown puro. Otros tendran notebooks cuando ejecutar y modificar el codigo sea parte esencial del aprendizaje.
+Algunos capítulos podrán ser Markdown puro. Otros tendrán notebooks cuando ejecutar y modificar el código sea parte esencial del aprendizaje.
 
-## Medicina y computacion
+## Medicina y computación
 
-Los ejemplos medicos de este libro son pedagogicos. Sirven para razonar sobre datos, decisiones y estructuras. No reemplazan juicio clinico, guias, validacion externa ni supervision profesional.
+Los ejemplos médicos de este libro son pedagógicos. Sirven para razonar sobre datos, decisiones y estructuras. No reemplazan juicio clínico, guías, validación externa ni supervisión profesional.
 
-Cuando aparezcan scores, riesgos, triage o reglas clinicas, se presentaran como objetos computacionales que deben verificarse, no como automatizaciones listas para uso asistencial.
+Cuando aparezcan scores, riesgos, triage o reglas clínicas, se presentarán como objetos computacionales que deben verificarse, no como automatizaciones listas para uso asistencial.

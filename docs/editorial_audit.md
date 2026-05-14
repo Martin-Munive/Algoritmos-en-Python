@@ -56,24 +56,24 @@ La migración no debe ser mecánica. Cada capítulo debe reescribirse o normaliz
 - claridad técnica;
 - consistencia con la promesa `Algoritmos en Python para Medicina y Ciencias de la Vida`;
 - compatibilidad real con Jupyter Book/Sphinx/GitHub Pages;
-- bibliografia cientifica y tecnica disponible;
+- bibliografía científica y técnica disponible;
 - capacidad de progresar desde fundamentos hacia frontera.
 
 ## Decisión editorial 2026-05-10
 
-El libro debe tener una ambicion mayor que introducir Python con ejemplos medicos.
+El libro debe tener una ambición mayor que introducir Python con ejemplos médicos.
 
 Decision:
 - los ejemplos como calculadora de riesgo cardiovascular, clasificador de urgencias o mini motor de reglas pertenecen al tramo inicial o intermedio;
-- el tramo avanzado debe conducir a algoritmos de bioinformatica, genetica computacional, neurologia computacional, redes biologicas, modelos probabilisticos, medicina de precision y sistemas de soporte de decision;
-- cada tema debe pasar por un protocolo de fuentes, modelos mentales, argumentos criticos y evaluacion profunda antes de convertirse en texto publicable;
-- cada capitulo o tema importante debe incluir una entrada historica breve cuando el origen, episodio, dato curioso o aplicacion historica ayude a entender el concepto;
-- el libro debe entrenar al autor/usuario en la materia mientras produce paginas publicables;
-- toda afirmacion cientifica fuerte debe apoyarse en bibliografia, fuente primaria, fuente tecnica o declararse como interpretacion razonada.
+- el tramo avanzado debe conducir a algoritmos de bioinformática, genética computacional, neurología computacional, redes biológicas, modelos probabilísticos, medicina de precisión y sistemas de soporte de decisión;
+- cada tema debe pasar por un protocolo de fuentes, modelos mentales, argumentos críticos y evaluación profunda antes de convertirse en texto publicable;
+- cada capítulo o tema importante debe incluir una entrada histórica breve cuando el origen, episodio, dato curioso o aplicación histórica ayude a entender el concepto;
+- el libro debe entrenar al autor/usuario en la materia mientras produce páginas publicables;
+- toda afirmación científica fuerte debe apoyarse en bibliografía, fuente primaria, fuente técnica o declararse como interpretación razonada.
 
-La pregunta editorial que gobierna cada unidad sera:
+La pregunta editorial que gobierna cada unidad será:
 
-> Esto ensena un concepto de forma clara sin reducirlo por debajo de la inteligencia del lector ni del autor?
+> Esto enseña un concepto de forma clara sin reducirlo por debajo de la inteligencia del lector ni del autor?
 
 El objetivo es iniciar una versión nueva y publicable sin perder el valor acumulado del repositorio previo.
 
@@ -84,15 +84,15 @@ Las carpetas heredadas `00-Presaberes`, `01-Analisis_de_Complejidad_Big_O` y `02
 Decision:
 - no publicar ni mostrar en GitHub la estructura antigua mientras se reconstruye el libro;
 - conservar el material en el historial Git para recuperarlo si aporta valor;
-- reintroducir Big O, estructuras de datos y presaberes solo cuando encajen en la nueva progresion editorial.
+- reintroducir Big O, estructuras de datos y presaberes solo cuando encajen en la nueva progresión editorial.
 
 ## Recomendación preliminar
 
 1. Conservar el nombre editorial principal:
-   - `Materia Medica Digitalis`
+   - `Materia Médica Digitalis`
 2. Usar como subtítulo:
    - `Algoritmos en Python para Medicina y Ciencias de la Vida`
-3. Migrar progresivamente los capitulos a la estructura `chapters/` de Jupyter Book.
+3. Migrar progresivamente los capítulos a la estructura `chapters/` de Jupyter Book.
 4. Mantener el índice maestro como brújula, pero con control de alcance.
 
 ## Próximo paso recomendado
