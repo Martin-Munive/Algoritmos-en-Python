@@ -14,7 +14,7 @@ Este primer capítulo no está dedicado a "los algoritmos" como tema aislado. Es
 
 El objetivo de este capítulo es construir el lenguaje mínimo para todo lo que vendrá después: búsqueda, complejidad, estructuras de datos, grafos, programación dinámica, bioinformática, genética computacional, neurología de sistemas y modelos de soporte de decisión.
 
-Las tres primeras secciones forman la entrega inicial. Las secciones cuarta y quinta quedan definidas como expansión necesaria del mismo capítulo antes de pasar a unidades posteriores.
+Las cinco secciones forman la primera unidad conceptual completa. A partir de aquí, el libro puede avanzar hacia Python como arquitectura de decisión: condicionales, bucles, funciones y verificación.
 
 ## Criterio de lectura
 

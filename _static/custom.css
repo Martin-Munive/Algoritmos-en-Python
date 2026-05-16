@@ -1,19 +1,32 @@
 .book-cover {
-  border-top: 4px solid #111827;
-  border-bottom: 1px solid #d1d5db;
-  padding: 2.4rem 0 2rem;
-  margin: 1.5rem 0 2.5rem;
+  background: #f8fafc;
+  border: 1px solid #d1d5db;
+  border-left: 6px solid #0f766e;
+  margin: 1rem 0 2.75rem;
+  padding: 2rem;
+}
+
+.cover-hero {
+  align-items: stretch;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1.55fr) minmax(17rem, 0.85fr);
+}
+
+.cover-main {
+  min-width: 0;
 }
 
 .book-cover h1 {
-  font-size: 3rem;
+  color: #111827;
+  font-size: clamp(2.4rem, 6vw, 4.25rem);
   line-height: 1.05;
-  margin: 0.35rem 0 1rem;
+  margin: 0.4rem 0 1rem;
   letter-spacing: 0;
 }
 
 .book-kicker {
-  color: #6b7280;
+  color: #0f766e;
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -22,10 +35,17 @@
 }
 
 .book-subtitle {
-  color: #374151;
-  font-size: 1.25rem;
+  color: #1f2937;
+  font-size: 1.32rem;
   line-height: 1.55;
-  max-width: 44rem;
+  max-width: 46rem;
+}
+
+.book-lede {
+  color: #374151;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  max-width: 48rem;
 }
 
 .book-author {
@@ -38,7 +58,116 @@
 .book-rights {
   color: #6b7280;
   font-size: 0.92rem;
-  margin-top: 1.4rem;
+  margin: 1.4rem 0 0;
+}
+
+.cover-signal {
+  align-content: center;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  display: grid;
+  gap: 0.85rem;
+  justify-items: center;
+  min-height: 18rem;
+  padding: 1.3rem;
+}
+
+.signal-row {
+  display: grid;
+  gap: 0.55rem;
+  width: 100%;
+}
+
+.signal-row span,
+.signal-core {
+  border: 1px solid #cbd5e1;
+  color: #111827;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 0.7rem 0.8rem;
+  text-align: center;
+}
+
+.signal-core {
+  background: #0f766e;
+  border-color: #0f766e;
+  color: #ffffff;
+  width: 100%;
+}
+
+.signal-flow {
+  color: #64748b;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.cover-progress {
+  border-top: 1px solid #d1d5db;
+  display: grid;
+  gap: 0.55rem;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin-top: 1.6rem;
+  padding-top: 1rem;
+}
+
+.cover-progress span {
+  color: #334155;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.promise-grid,
+.reading-routes {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 1.25rem 0 2rem;
+}
+
+.promise-grid > div,
+.reading-routes > a {
+  border: 1px solid #d1d5db;
+  padding: 1rem;
+}
+
+.promise-grid h3 {
+  color: #111827;
+  font-size: 1rem;
+  margin: 0 0 0.45rem;
+}
+
+.promise-grid p {
+  color: #374151;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.reading-routes > a {
+  color: #111827;
+  display: block;
+  text-decoration: none;
+}
+
+.reading-routes > a:hover {
+  border-color: #0f766e;
+}
+
+.reading-routes strong {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.reading-routes span {
+  color: #4b5563;
+  display: block;
+  font-size: 0.92rem;
+  line-height: 1.5;
 }
 
 .definition-block {
@@ -49,4 +178,28 @@
 
 .definition-block strong {
   color: #111827;
+}
+
+@media (max-width: 900px) {
+  .book-cover {
+    padding: 1.4rem;
+  }
+
+  .cover-hero,
+  .promise-grid,
+  .reading-routes {
+    grid-template-columns: 1fr;
+  }
+
+  .cover-signal {
+    min-height: 0;
+  }
+
+  .cover-progress {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cover-progress span {
+    text-align: left;
+  }
 }

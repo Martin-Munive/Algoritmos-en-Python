@@ -44,11 +44,15 @@ La definición tiene varias capas.
 Observa esta miniatura:
 
 ```python
+# Entradas: dos signos vitales representados como variables.
 presion_sistolica = 88
 frecuencia_respiratoria = 32
 
+# Decisión derivada: combina dos comparaciones.
 alto_riesgo = presion_sistolica < 90 or frecuencia_respiratoria > 30
 ```
+
+Salida esperada: no imprime nada. `alto_riesgo` queda con valor `True`.
 
 El código parece simple. Pero ya contiene una cadena conceptual:
 
@@ -115,10 +119,18 @@ Comparemos dos formas de clasificar riesgo.
 Versión pobre:
 
 ```python
+# Entradas: una medición disponible y una ausente.
 presion_sistolica = 88
 saturacion_oxigeno = None
 
+# Esta línea falla porque None no puede compararse con 90.
 alto_riesgo = presion_sistolica < 90 or saturacion_oxigeno < 90
+```
+
+Salida esperada:
+
+```text
+TypeError: '<' not supported between instances of 'NoneType' and 'int'
 ```
 
 Este código falla porque intenta comparar `None` con un número. Pero incluso si el lenguaje lo permitiera, habría un problema conceptual: la saturación no es normal; está ausente.
@@ -126,9 +138,11 @@ Este código falla porque intenta comparar `None` con un número. Pero incluso s
 Una versión más responsable:
 
 ```python
+# Entradas: una medición disponible y una ausente.
 presion_sistolica = 88
 saturacion_oxigeno = None
 
+# Razones y pendientes se guardan por separado.
 razones = []
 datos_pendientes = []
 
@@ -142,6 +156,7 @@ if saturacion_oxigeno is None:
 elif saturacion_oxigeno < 90:
     razones.append("hipoxemia")
 
+# La clasificación distingue riesgo, incompletitud y ausencia de criterios.
 if razones:
     clasificacion = "alto_riesgo"
 elif datos_pendientes:
@@ -152,6 +167,14 @@ else:
 print(clasificacion)
 print("razones:", razones)
 print("pendientes:", datos_pendientes)
+```
+
+Salida esperada:
+
+```text
+alto_riesgo
+razones: ['hipotension']
+pendientes: ['saturacion_oxigeno']
 ```
 
 La diferencia no es solo técnica. La segunda versión distingue tres cosas:

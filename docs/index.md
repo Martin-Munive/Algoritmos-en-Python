@@ -12,6 +12,15 @@ Su función inicial es:
 - preparar la publicación publica en GitHub Pages;
 - sostener una progresión desde algoritmos fundamentales hasta bioinformática, genética, neurología computacional y frontera científica.
 
+## Documentos de control
+
+- `project_status.md`: definición del proyecto, propósito, avance porcentual, pendientes y punto de reanudación.
+- `roadmap.md`: hoja de ruta editorial por fases.
+- `editorial_audit.md`: auditoría editorial y decisiones vigentes.
+- `legacy_structure_audit.md`: lectura de la estructura heredada y destinos editoriales.
+- `cover_design_brief.md`: criterios para rediseñar la portada pública.
+- `clean_code_reference_strategy.md`: estrategia de consulta selectiva de `Clean Code` como fuente privada de buenas prácticas.
+
 ## Estado actual
 
 El proyecto existía ya como repositorio con contenido valioso, pero todavía no estaba montado de forma completa como libro web navegable.

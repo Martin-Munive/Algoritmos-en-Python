@@ -100,16 +100,19 @@ La madurez consiste en reconocer que no existe "el paso correcto" en abstracto. 
 Podemos traducir una miniatura del razonamiento anterior a Python:
 
 ```python
+# Entradas: observaciones iniciales.
 estado_conciencia_alterado = False
 presion_sistolica = 88
 frecuencia_respiratoria = 32
 saturacion_oxigeno = 89
 
+# Lista de razones que explicarán la clasificación.
 criterios_emergencia = []
 
 if estado_conciencia_alterado:
     criterios_emergencia.append("alteración del estado de conciencia")
 
+# Cada condición agrega una razón si el criterio está presente.
 if presion_sistolica < 90:
     criterios_emergencia.append("hipotension")
 
@@ -119,13 +122,22 @@ if frecuencia_respiratoria > 30:
 if saturacion_oxigeno < 90:
     criterios_emergencia.append("hipoxemia")
 
+# Si existe al menos una razón, el estado operativo cambia.
 if criterios_emergencia:
     clasificacion = "alto riesgo"
 else:
     clasificacion = "evaluación no urgente"
 
+# Salidas visibles: estado y justificación.
 print(clasificacion)
 print(criterios_emergencia)
+```
+
+Salida esperada:
+
+```text
+alto riesgo
+['hipotension', 'taquipnea severa', 'hipoxemia']
 ```
 
 Este código sigue siendo una simplificación. No es una guía clínica. No reemplaza una escala validada. Pero ya muestra una diferencia decisiva: la salida no aparece sola. Viene acompañada de razones.

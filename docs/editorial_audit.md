@@ -96,6 +96,22 @@ Regla:
 - los términos locales pueden quedar explicados en el capítulo si no tendrán recurrencia;
 - toda redefinición importante debe propagarse al glosario y, si corresponde, a capítulos anteriores.
 
+## Directiva editorial 2026-05-15: ejemplos de código enseñables
+
+Los ejemplos de código del libro no deben aparecer como bloques decorativos sin explicación ni salida.
+
+Regla:
+- cada bloque de código publicable debe incluir comentarios breves que expliquen la función de entradas, reglas, estados, salidas o trazabilidad;
+- si el código imprime algo, debe mostrarse una sección `Salida esperada`;
+- si el código no imprime nada, debe declararse explícitamente qué variable, función o estado queda creado;
+- si el ejemplo produce un error intencional, debe mostrarse el tipo de error esperado y explicar su valor pedagógico;
+- los ejemplos biomédicos deben declarar cuando son miniaturas conceptuales y no escalas clínicas validadas.
+
+Objetivo:
+- entrenar al lector para leer código como procedimiento verificable;
+- evitar que el libro enseñe sintaxis sin ejecución observable;
+- reforzar la responsabilidad técnica cuando el código toca dominios biomédicos.
+
 ## Limpieza editorial 2026-05-11
 
 Las carpetas heredadas `00-Presaberes`, `01-Analisis_de_Complejidad_Big_O` y `02-Estructuras_de_Datos_Lineales` fueron retiradas de la rama activa.

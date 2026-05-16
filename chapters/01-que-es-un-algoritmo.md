@@ -94,14 +94,23 @@ Ese puente es la razón de este libro. El médico que aprende algoritmos no est�
 Supongamos que queremos clasificar una temperatura corporal.
 
 ```python
+# Entrada: una medición de temperatura en grados Celsius.
 temperatura_celsius = 38.4
 
+# Regla mínima: comparar la medición con un umbral.
 if temperatura_celsius >= 38.0:
     estado_termico = "fiebre"
 else:
     estado_termico = "sin fiebre"
 
+# Salida visible del procedimiento.
 print(estado_termico)
+```
+
+Salida esperada:
+
+```text
+fiebre
 ```
 
 Este fragmento es simple, pero contiene la anatomía de un algoritmo.
@@ -117,14 +126,17 @@ Ese es el punto. Un algoritmo no se vuelve inteligente por estar escrito en Pyth
 Podemos volver el ejemplo menos ingenuo:
 
 ```python
+# Entradas: signos vitales medidos.
 temperatura_celsius = 38.4
 frecuencia_cardiaca = 118
 presion_sistolica = 88
 
+# Variables intermedias: convierten números en criterios.
 fiebre = temperatura_celsius >= 38.0
 taquicardia = frecuencia_cardiaca >= 100
 hipotension = presion_sistolica < 90
 
+# Trazabilidad: conserva las razones que activan la decisión.
 criterios_riesgo = []
 
 if fiebre:
@@ -136,6 +148,7 @@ if taquicardia:
 if hipotension:
     criterios_riesgo.append("hipotension")
 
+# Regla compuesta: combina criterios para producir una clasificación.
 alto_riesgo = fiebre and (taquicardia or hipotension)
 
 if alto_riesgo:
@@ -143,8 +156,16 @@ if alto_riesgo:
 else:
     conducta = "seguimiento_clinico"
 
+# Salidas: conducta y razones.
 print(conducta)
 print(criterios_riesgo)
+```
+
+Salida esperada:
+
+```text
+evaluacion_prioritaria
+['fiebre', 'taquicardia', 'hipotension']
 ```
 
 Seguimos ante una miniatura, no ante una escala clínica validada. Pero la estructura ya cambió. El algoritmo no clasifica un dato aislado; integra variables, crea conceptos intermedios, conserva razones y produce una conducta.

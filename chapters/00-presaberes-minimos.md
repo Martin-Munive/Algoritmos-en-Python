@@ -15,11 +15,15 @@ El lector debe poder mirar un fragmento breve de Python y responder tres pregunt
 3. qué salida o decisión se produce.
 
 ```python
+# Datos observados en una evaluación inicial.
 presion_sistolica = 88
 frecuencia_respiratoria = 32
 
+# La variable booleana resume una regla mínima de riesgo.
 alto_riesgo = presion_sistolica < 90 or frecuencia_respiratoria > 30
 ```
+
+Salida esperada: este fragmento no imprime nada. Al ejecutarlo, `alto_riesgo` queda con valor `True`.
 
 No basta con decir "esto es Python". Hay que reconocer que el código convierte dos observaciones en una clasificación booleana. Esa diferencia será central en todo el libro.
 
@@ -28,9 +32,12 @@ No basta con decir "esto es Python". Hay que reconocer que el código convierte 
 Una variable es un nombre para un valor.
 
 ```python
+# Dos variables numéricas con nombres simples.
 edad = 67
 presion_sistolica = 92
 ```
+
+Salida esperada: no imprime nada. El intérprete conserva los valores para usarlos después.
 
 Pero en este libro una variable será más que un recipiente. Será una decisión de representación: qué parte del mundo entra al programa, con qué nombre, en qué unidad, con qué precisión y bajo qué supuesto.
 
@@ -41,11 +48,14 @@ Pero en este libro una variable será más que un recipiente. Será una decisió
 Python distingue números, texto, valores lógicos y colecciones.
 
 ```python
+# Cada línea ilustra un tipo de dato básico.
 frecuencia_cardiaca = 112      # entero
 temperatura = 38.6             # decimal
 diagnostico = "neumonia"       # texto
 requiere_oxigeno = True        # booleano
 ```
+
+Salida esperada: no imprime nada. El objetivo es crear variables con tipos distintos.
 
 Estos tipos importan porque una decisión computacional depende de la forma del dato. No se compara igual una cifra, una palabra, una lista o una ausencia de información.
 
@@ -54,18 +64,24 @@ Estos tipos importan porque una decisión computacional depende de la forma del 
 Una lista agrupa valores ordenados.
 
 ```python
+# Lista: colección ordenada de elementos.
 signos_alarma = ["hipotension", "hipoxemia", "confusion"]
 ```
+
+Salida esperada: no imprime nada. `signos_alarma` queda como una lista de tres textos.
 
 Un diccionario asocia nombres con valores.
 
 ```python
+# Diccionario: registro simple de un paciente.
 paciente = {
     "edad": 67,
     "presion_sistolica": 88,
     "saturacion_oxigeno": 89,
 }
 ```
+
+Salida esperada: no imprime nada. `paciente["edad"]` devolvería `67`.
 
 Una tabla organiza observaciones en filas y variables en columnas. Más adelante, esta idea será la base para datos clínicos, laboratorios seriados, cohortes, secuencias biológicas y matrices.
 
@@ -74,11 +90,14 @@ Una tabla organiza observaciones en filas y variables en columnas. Más adelante
 Una condición permite que el programa tome caminos diferentes.
 
 ```python
+# La condición separa dos ramas de decisión.
 if presion_sistolica < 90:
     clasificacion = "alto riesgo"
 else:
     clasificacion = "reevaluar"
 ```
+
+Salida esperada: no imprime nada. Si `presion_sistolica` vale `88`, `clasificacion` queda como `"alto riesgo"`.
 
 El libro volverá una y otra vez a esta idea: una condición no es solo una línea de código; es un umbral, una hipótesis y una responsabilidad.
 
@@ -87,11 +106,20 @@ El libro volverá una y otra vez a esta idea: una condición no es solo una lín
 Un bucle permite aplicar una operación a varios elementos.
 
 ```python
+# El bucle recorre cada medición de temperatura.
 temperaturas = [37.2, 38.4, 37.9, 39.1]
 
 for temperatura in temperaturas:
+    # Solo imprime cuando la temperatura cruza el umbral definido.
     if temperatura >= 38.0:
         print("fiebre")
+```
+
+Salida esperada:
+
+```text
+fiebre
+fiebre
 ```
 
 Los bucles serán necesarios para recorrer pacientes, registros, genes, ventanas temporales, secuencias, imágenes y resultados de simulación.
@@ -101,9 +129,12 @@ Los bucles serán necesarios para recorrer pacientes, registros, genes, ventanas
 Una función encapsula una operación para poder repetirla, probarla y mejorarla.
 
 ```python
+# La función encapsula una regla para reutilizarla.
 def es_hipotension(presion_sistolica):
     return presion_sistolica < 90
 ```
+
+Salida esperada: no imprime nada. La función queda disponible; `es_hipotension(80)` devolvería `True`.
 
 En software médico, una función bien nombrada puede hacer visible una regla. Una función mal nombrada puede ocultar una decisión peligrosa.
 
@@ -112,11 +143,14 @@ En software médico, una función bien nombrada puede hacer visible una regla. U
 En medicina y ciencias de la vida, lo que falta también informa.
 
 ```python
+# None representa ausencia explícita de dato.
 creatinina = None
 
 if creatinina is None:
     estado = "evaluacion_incompleta"
 ```
+
+Salida esperada: no imprime nada. `estado` queda como `"evaluacion_incompleta"`.
 
 Un error frecuente es tratar un dato faltante como si fuera normal. Si no hay presión arterial registrada, el paciente no debe clasificarse automáticamente como estable. Debe quedar en un estado diferente: pendiente, incompleto o no evaluable.
 
@@ -125,9 +159,12 @@ Un error frecuente es tratar un dato faltante como si fuera normal. Si no hay pr
 Una prueba verifica que una parte del programa hace lo esperado.
 
 ```python
+# Las aserciones fallan si la función no cumple lo esperado.
 assert es_hipotension(80) == True
 assert es_hipotension(120) == False
 ```
+
+Salida esperada: no imprime nada si las pruebas pasan. Si alguna condición fuera falsa, Python produciría un `AssertionError`.
 
 El lector no necesita dominar pruebas desde el inicio, pero debe entender la idea: si una decisión va a convertirse en código, debe poder verificarse.
 
@@ -212,4 +249,3 @@ Por eso hablaremos de:
 ## Cómo usar esta página
 
 Si estos conceptos son familiares, continúa. Si no lo son, avanza igual, pero vuelve aquí cuando una sección use alguno de ellos. El objetivo no es memorizar sintaxis. El objetivo es construir el vocabulario mínimo para estudiar algoritmos como instrumentos de pensamiento, ciencia y responsabilidad.
-

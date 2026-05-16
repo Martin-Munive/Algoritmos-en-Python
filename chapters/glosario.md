@@ -14,6 +14,10 @@ Forma de estudiar cómo crece el costo de un algoritmo cuando aumenta el tamaño
 
 Expresión que puede evaluarse como verdadera o falsa y que permite tomar caminos diferentes dentro de un procedimiento.
 
+## Condicional
+
+Estructura de control que selecciona una rama de ejecución según una condición. En este libro, un condicional también representa una decisión sobre el significado operativo de los datos.
+
 ## Dato
 
 Representación registrada de una observación, medición, evento, categoría o estado. Un dato no equivale automáticamente a conocimiento ni a decisión.
@@ -26,13 +30,25 @@ Valor ausente, no medido, no registrado o no disponible. En dominios biomédicos
 
 Elección de una acción, clasificación, interpretación o transformación a partir de datos, reglas, contexto y objetivos.
 
+## Estado
+
+Representación discreta de la situación actual de un sistema, paciente, procedimiento o dato. Un estado permite saber qué se conoce, qué falta y qué transiciones son posibles.
+
 ## Estructura de datos
 
 Forma organizada de representar información para facilitar operaciones como búsqueda, acceso, actualización, recorrido, comparación o agregación.
 
+## Excepción
+
+Condición que interrumpe, modifica o degrada el flujo esperado de un procedimiento. Puede ser técnica, como un tipo incompatible, o del dominio, como un caso fuera de población.
+
 ## Función
 
 Bloque reutilizable de código que recibe entradas, ejecuta una operación y puede devolver una salida. En este libro, una función también será tratada como unidad de diseño y verificación.
+
+## Rama
+
+Camino de ejecución posible dentro de un condicional. Una rama responsable debe tener un significado claro y no mezclar estados conceptualmente distintos.
 
 ## Modelo
 
@@ -42,6 +58,10 @@ Representación simplificada de un fenómeno. Un modelo decide qué aspectos del
 
 Forma en que un fenómeno del mundo se convierte en algo manipulable por un sistema: variable, lista, tabla, matriz, grafo, texto, señal, imagen o secuencia.
 
+## Regla de decisión
+
+Criterio explícito que conecta datos y condiciones con una clasificación, acción, transición o salida.
+
 ## Sesgo
 
 Desviación sistemática que afecta observaciones, datos, modelos, decisiones o resultados. Puede originarse en medición, selección, codificación, contexto social, diseño del sistema o interpretación.
@@ -49,6 +69,10 @@ Desviación sistemática que afecta observaciones, datos, modelos, decisiones o 
 ## Trazabilidad
 
 Capacidad de reconstruir cómo se llegó a una salida: qué datos entraron, qué reglas se aplicaron, qué versión del procedimiento se usó y qué excepciones aparecieron.
+
+## Transición
+
+Cambio de un estado a otro cuando una condición se cumple. En un algoritmo responsable, la transición debe conservar razones y límites.
 
 ## Umbral
 
@@ -58,7 +82,10 @@ Valor que separa estados o conductas. Un umbral puede ser útil, pero casi siemp
 
 Proceso de evaluar si un procedimiento, modelo o algoritmo funciona como se espera en los datos, condiciones y poblaciones para los que será usado.
 
+## Versión de regla
+
+Identificador que permite saber qué variante de un criterio, algoritmo o modelo produjo una salida. Es parte mínima de la trazabilidad cuando una decisión puede cambiar con el tiempo.
+
 ## Variable
 
 Nombre que conserva un valor para ser usado por un programa. En este libro, una variable se entiende también como una decisión de representación.
-

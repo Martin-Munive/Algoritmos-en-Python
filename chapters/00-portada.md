@@ -1,18 +1,46 @@
 # Materia Médica Digitalis
 
-<div class="book-cover">
-  <p class="book-kicker">Algoritmos en Python para Medicina y Ciencias de la Vida</p>
-  <h1>Materia Médica Digitalis</h1>
-  <p class="book-subtitle">Una introducción rigurosa al pensamiento algorítmico para quienes trabajan con decisiones, datos, riesgo y sistemas vivos.</p>
-  <div class="book-author">
-    <strong>Martin Munive</strong><br />
-    Médico General<br />
-    Analista y programador de software
+<section class="book-cover">
+  <div class="cover-hero">
+    <div class="cover-main">
+      <p class="book-kicker">Algoritmos en Python para Medicina y Ciencias de la Vida</p>
+      <h1>Materia Médica Digitalis</h1>
+      <p class="book-subtitle">Pensamiento algorítmico para quienes trabajan con decisiones, datos, riesgo y sistemas vivos.</p>
+      <p class="book-lede">Un libro web para aprender Python como instrumento de razonamiento médico-computacional: desde variables, estados y trazabilidad hasta estructuras de datos, bioinformática, genética computacional y medicina digital responsable.</p>
+      <div class="book-author">
+        <strong>Martin Munive</strong><br />
+        Médico General<br />
+        Analista y programador de software
+      </div>
+    </div>
+    <div class="cover-signal" aria-label="Mapa conceptual del libro">
+      <div class="signal-row">
+        <span>datos</span>
+        <span>reglas</span>
+        <span>estados</span>
+      </div>
+      <div class="signal-flow">→</div>
+      <div class="signal-core">decisión verificable</div>
+      <div class="signal-flow">→</div>
+      <div class="signal-row">
+        <span>Python</span>
+        <span>algoritmos</span>
+        <span>biomedicina</span>
+      </div>
+    </div>
+  </div>
+  <div class="cover-progress">
+    <span>Decisiones</span>
+    <span>Python</span>
+    <span>Estructuras</span>
+    <span>Algoritmos</span>
+    <span>Datos biomédicos</span>
+    <span>Frontera</span>
   </div>
   <p class="book-rights">© 2026 Martin Munive. Todos los derechos reservados.</p>
-</div>
+</section>
 
-## Propósito
+## Por qué existe este libro
 
 Este libro nace de una convicción: la medicina contemporánea, las ciencias de la vida y el software ya no pueden pensarse como territorios separados. El clínico interpreta datos, el investigador transforma observaciones en modelos, el programador vuelve ejecutable una decisión y el analista convierte incertidumbre en estructura.
 
@@ -28,7 +56,41 @@ En medicina, esa decisión puede clasificar riesgo, ordenar una evaluación, pri
 
 El libro enseña Python porque Python permite escribir con claridad. Pero el objetivo más profundo es otro: aprender a pensar con precisión cuando el problema tiene datos incompletos, ambigüedad, costo, sesgo y consecuencias.
 
-## Lectura
+## Qué aprenderás
+
+<div class="promise-grid">
+  <div>
+    <h3>Formalizar decisiones</h3>
+    <p>Convertir observaciones, reglas, estados, excepciones y trazabilidad en procedimientos verificables.</p>
+  </div>
+  <div>
+    <h3>Programar con criterio</h3>
+    <p>Usar Python para representar problemas biomédicos sin reducirlos a sintaxis ni ejemplos escolares.</p>
+  </div>
+  <div>
+    <h3>Escalar hacia frontera</h3>
+    <p>Conectar fundamentos con estructuras de datos, algoritmos clásicos, bioinformática, genética y medicina digital.</p>
+  </div>
+</div>
+
+## Rutas de lectura
+
+<div class="reading-routes">
+  <a href="00-prefacio.html">
+    <strong>Empieza desde cero</strong>
+    <span>Prefacio, presaberes mínimos y primera unidad conceptual.</span>
+  </a>
+  <a href="01-el-lenguaje-de-las-decisiones.html">
+    <strong>Ruta médica</strong>
+    <span>Decisiones, riesgo, datos faltantes, estados y trazabilidad.</span>
+  </a>
+  <a href="03-variables-datos-decisiones.html">
+    <strong>Ruta computacional</strong>
+    <span>Variables, representación, condiciones y procedimientos ejecutables.</span>
+  </a>
+</div>
+
+## Cómo avanza
 
 La obra avanza desde los fundamentos del pensamiento algorítmico hacia estructuras de datos, complejidad, análisis, modelado y construcción de herramientas aplicadas a medicina y ciencias de la vida.
 
@@ -44,3 +106,7 @@ Cada capítulo debe sostener cuatro preguntas:
 Comienza por el prefacio si quieres entender la intención de la obra. Entra al primer capítulo si quieres confrontar desde el inicio la pregunta central:
 
 > ¿Qué significa pensar algorítmicamente cuando las decisiones importan?
+
+## Responsabilidad
+
+Los ejemplos médicos del libro son pedagógicos. Sirven para estudiar representación, algoritmos, datos y decisiones; no reemplazan juicio clínico, guías, validación externa ni supervisión profesional.

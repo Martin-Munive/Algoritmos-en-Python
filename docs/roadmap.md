@@ -63,6 +63,12 @@ Secciones iniciales:
 Criterio:
 - cada tema debe tener definición, intuición, límites, ejemplos, código, consecuencias y preguntas de comprensión profunda.
 
+Estado 2026-05-15:
+- la primera unidad conceptual ya incluye las cinco primeras secciones: algoritmo, pasos, variables, estados/umbrales y excepciones/trazabilidad;
+- los ejemplos de código existentes fueron corregidos para incluir comentarios y salidas esperadas;
+- se inició el bloque `Python como arquitectura de decisión` con `Condicionales como arquitectura de decisión`, aplicando `CODE CLEAN` como línea transversal: versión ingenua, crítica técnica, versión mejorada, salida esperada, prueba mínima y lección transferible;
+- el siguiente bloque debe continuar con bucles, funciones y verificación.
+
 ## Fase 3. Algoritmos clásicos con lectura biomédica
 
 Temas:
